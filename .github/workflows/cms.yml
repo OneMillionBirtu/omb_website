@@ -1,0 +1,35 @@
+name: CMS CI/CD
+
+on:
+  push:
+    paths:
+      - 'cms/**'
+  pull_request:
+    paths:
+      - 'cms/**'
+
+jobs:
+  lint:
+    name: Run ESLint and Prettier
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cms
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier
+        run: npm run format:check
