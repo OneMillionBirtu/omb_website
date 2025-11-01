@@ -9,9 +9,12 @@ on:
       - 'frontend/**'
 
 jobs:
-   lint:
+  lint:
     name: Run ESLint and Prettier
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
 
     steps:
       - name: Check out Git repository
