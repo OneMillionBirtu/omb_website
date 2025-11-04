@@ -1,12 +1,13 @@
 // import heroImage from "hero-image.jpg";
 import Image from "next/image";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative bg-gradient-hero h-screen overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -25,17 +26,14 @@ export default function Home() {
             <h1 className="text-4xl lg:text-4xl font-bold mb-6 leading-tight">
               Empowering Livelihoods Through Climate-Smart Technologies
             </h1>
-            <h2 className="hidden sm:block text-lg sm:text-2xl md:text-3xl mb-6 text-primary-foreground/90 leading-relaxed">
+            <h2 className="hidden sm:block text-lg sm:text-xl md:text-3xl mb-6 text-primary-foreground/90 leading-relaxed">
               Building sustainable markets and resilient communities across Ethiopia
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="text-lg px-8 bg-amber-400 text-green-900">
-                {/* <Link to="/"> */}
                 Our Work
-                {/* </Link> */}
               </Button>
               <Button size="lg" className="text-lg px-8 bg-amber-400 text-green-900">
-                {/* <Link to="/get-involved">Support Us</Link> */}
                 Donate
               </Button>
             </div>
