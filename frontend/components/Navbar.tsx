@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -15,13 +16,13 @@ const Navigation = () => {
   return (
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-1">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">OMB</span>
+            <div className="w-40 h-20 bg-gradient-primary rounded-lg flex items-center justify-center relative overflow-hidden">
+              <Image src="/logo.png" alt="OMB Logo" fill className="object-contain pl-2" />
             </div>
-            <span className="font-heading font-bold text-xl text-foreground">OMB</span>
+            {/* <span className="font-heading font-bold text-xl text-foreground">OMB</span> */}
           </Link>
 
           {/* Desktop Navigation */}

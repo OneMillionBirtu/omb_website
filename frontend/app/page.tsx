@@ -40,6 +40,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* decorative squiggle between hero and next section */}
       <section className="bg-white pt-0">
         <div className="relative h-40 md:h-56 lg:h-72 overflow-hidden">
@@ -54,11 +55,17 @@ export default function Home() {
       </section>
 
       {/* content section: responsive two-column layout */}
-      <section className="bg-white">
-        <div className="container mx-auto px-4 py-20">
+      <section className="bg-white pb-18">
+        <div className="container mx-auto px-18">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* left column - copy-friendly, responsive */}
             <div className="max-w-xl mx-auto lg:mx-0">
+              <div className="mt-8 flex items-center gap-2 pb-8">
+                <div className="hidden lg:block w-5 h-12 border-l-2 border-emerald-900"></div>
+                <div className="text-emerald-900 text-sm lg:text-base font-bold uppercase tracking-widest">
+                  Know About us
+                </div>
+              </div>
               <h3 className="text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6 font-['Roboto']">
                 We bring light to the livelihood
               </h3>
@@ -75,12 +82,6 @@ export default function Home() {
                 <button className="px-6 py-3 bg-amber-400 text-black rounded-md font-medium">
                   Learn more
                 </button>
-              </div>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="hidden lg:block w-5 h-12 border-l-2 border-emerald-900"></div>
-                <div className="text-emerald-900 text-sm lg:text-base font-bold uppercase tracking-widest">
-                  Know About us
-                </div>
               </div>
             </div>
 
@@ -126,6 +127,78 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* second decorative squiggle */}
+      <section className="bg-white pb-0 ">
+        <div className="relative h-40 md:h-56 lg:h-72 overflow-hidden">
+          <Image
+            src="/squiggle2.png"
+            alt="decorative squiggle"
+            fill
+            className="object-contain object-top"
+            priority
+          />
+        </div>
+      </section>
+
+      {/* testimonial / our why's section with gradient over background image */}
+      <section
+        className="relative"
+        // style={{
+        //   background:
+        //     "linear-gradient(0deg, rgba(14, 34, 25, 0.80) 0%, rgba(14, 34, 25, 0.80) 100%), url('/homeback2.jpg') lightgray -874.599px -419.073px / 202.078% 135.678% no-repeat",
+        // }}
+      >
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/homeback2.jpg"
+            alt="Ethiopian farmers using climate-smart technology"
+            fill
+            className="object-cover object-center opacity-50"
+            priority
+          />
+        </div>
+
+        <div className="container mx-auto px-18 py-20">
+          <div className="flex justify-end">
+            <div className="text-amber-400 font-bold tracking-widest text-3xl">OUR WHYs</div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8">
+            {/* image */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="w-64 sm:w-72 md:w-80 lg:w-96 rounded-xl overflow-hidden bg-white/0 shadow-lg">
+                <Image
+                  src="/kechine.png"
+                  alt="Mrs. Kechine"
+                  width={720}
+                  height={720}
+                  className="object-cover w-full h-full rounded-xl"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* quote/text */}
+            <div className="text-white">
+              <blockquote className="text-lg md:text-xl leading-relaxed">
+                “I was terrified giving birth in the dark. I worried for myself and my baby. The
+                nurses did their best, but my baby died during my travel for hours to another
+                hospital... I still think about my baby to this day.”
+              </blockquote>
+
+              <div className="mt-6 text-amber-400 text-3xl font-semibold">— Mrs. Kechine</div>
+              <div className="text-white/90">Oda Nabe Health Center Patient</div>
+
+              <div className="mt-8">
+                <button className="px-6 py-2 border border-amber-400 text-amber-400 rounded-md">
+                  Read more
+                </button>
               </div>
             </div>
           </div>
