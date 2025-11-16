@@ -158,13 +158,13 @@ const Navigation = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4 pr-4">
             <Link href="/notices" className="relative">
               <Bell className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-destructive rounded-full"></span>
             </Link>
             <Button asChild className="bg-amber-400 text-green-900">
-              <Link href="/support">Support</Link>
+              <Link href="/support">Donate</Link>
             </Button>
           </div>
 
@@ -204,7 +204,7 @@ const Navigation = () => {
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button asChild>
-                  <Link href="/support">Support</Link>
+                  <Link href="/support">Donate</Link>
                 </Button>
               </div>
             </div>
