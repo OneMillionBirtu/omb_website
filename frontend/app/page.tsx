@@ -35,7 +35,7 @@ export default function Home() {
               <Button size="lg" className="text-lg px-8 bg-amber-400 text-green-900">
                 Our Work
               </Button>
-              <Button size="lg" className="text-lg px-8 bg-amber-400 text-green-900">
+              <Button size="lg" className="text-lg px-8 bg-white text-green-900">
                 Donate
               </Button>
             </div>
