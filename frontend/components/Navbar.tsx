@@ -60,12 +60,12 @@ const Navigation = () => {
               </div>
             </div>
 
-            {/* Area of Work Dropdown */}
+            {/* our Work Dropdown */}
             <div className="relative group">
               <Link
-                href="/areas-of-work"
+                href="/ourwork"
                 className={`font-medium transition-colors hover:text-primary flex items-center space-x-1 ${
-                  isActiveSection("/areas-of-work") ||
+                  isActiveSection("/ourofwork") ||
                   isActiveSection("/livelihood") ||
                   isActiveSection("/health") ||
                   isActiveSection("/education") ||
@@ -74,7 +74,7 @@ const Navigation = () => {
                     : "text-muted-foreground"
                 }`}
               >
-                <span className="text-green-900">Area of Work</span>
+                <span className="text-green-900">Our Work</span>
                 <ChevronDown className="w-4 h-4" />
               </Link>
               <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -182,10 +182,10 @@ const Navigation = () => {
                 About Us
               </Link>
               <Link
-                href="/areas-of-work"
+                href="/ourwork"
                 className="font-medium text-muted-foreground hover:text-primary"
               >
-                Area of Work
+                Our Work
               </Link>
               <Link href="/news" className="font-medium text-muted-foreground hover:text-primary">
                 Birtu Insights

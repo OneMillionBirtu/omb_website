@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-6 text-sm text-white/80 text-center">
-          © 2024 Organization for Market Building (OMB). All rights reserved.
+          © 2025 Organization for Market Building (OMB). All rights reserved.
         </div>
       </div>
     </footer>
