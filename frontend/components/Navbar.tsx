@@ -133,16 +133,16 @@ const Navigation = () => {
               </button>
               <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link
-                  href="/news"
+                  href="/birtuinsights/casestudies"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
                 >
-                  Newsletter & Articles
+                  Case Studies
                 </Link>
                 <Link
-                  href="/resources"
+                  href="/birtuinsights/newsarticles"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
                 >
-                  Resources & Publications
+                  News and Articles
                 </Link>
               </div>
             </div>
@@ -187,7 +187,10 @@ const Navigation = () => {
               >
                 Our Work
               </Link>
-              <Link href="/news" className="font-medium text-muted-foreground hover:text-primary">
+              <Link
+                href="/birtuinsights/casestudies"
+                className="font-medium text-muted-foreground hover:text-primary"
+              >
                 Birtu Insights
               </Link>
               <Link
