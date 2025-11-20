@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import { Calendar } from "lucide-react";
 
 export default function Page() {
   return (
@@ -17,20 +19,18 @@ export default function Page() {
         }}
       >
         <div className="container mx-auto px-16 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-2 items-start">
+          <div className="flex flex-col gap-4 w-full text-white">
             {/* Left copy */}
-            <div className="flex  flex-col text-white max-w-lg lg:pr-8">
-              <div className="flex items-center gap-3 mb-16">
+            <div className="flex justify-end w-full">
+              <p className="text-6xl">Birtu Insights</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-3 mt-16">
                 <div className="w-12 h-0.5 bg-amber-400" />
                 <div className="uppercase text-4xl text-amber-400 tracking-widest font-semibold">
-                  Areas of Work
+                  Case Studies
                 </div>
               </div>
-            </div>
-            {/* lg:h-64 lg:w-74 h-48 */}
-            {/* Right cards - overlapping */}
-            <div className="flex flex-wrap gap-4 py-8">
-              <div className="flex gap-4 w-full"></div>
             </div>
           </div>
         </div>
@@ -38,45 +38,67 @@ export default function Page() {
 
       {/* Programs section - alternating layout */}
       <section className="bg-white">
-        <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
-          <div className="flex items-center justify-end mb-12">
-            <h3 className="text-4xl font-semibold text-emerald-900 mr-4">OUR PROGRAMS</h3>
-            <div className="w-12 h-0.5 bg-emerald-900" />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-26 gap-12">
-            {/* Program item 1 - image right */}
-            <div className="flex flex-col gap-2 justify-center">
-              <h4 className="text-4xl font-semibold text-gray-900 mb-4">
-                Enabling DRE Ecosystem for Livelihoods in Ethiopia (EDEL)
-              </h4>
-              <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Porro vero at quae eaque delectus eius excepturi, provident voluptates, alias
-                repudiandae possimus labore iure soluta velit natus quia fuga? Repudiandae, modi.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum trisident voluptates, aliaspossimus labore iure soluta velit natus
-                quia fuga? Repudiandae, modi.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Porro vero at quae eaque delectus eius excepturi, provident voluptates, alias
-                repudiandae possimus labore iure soluta velit natus quia fuga? Repudiandae, modi.
-              </p>
-              <button className="px-4 py-2 bg-amber-400 text-black rounded ">Learn more</button>
-            </div>
-            <div
-              className="rounded-xl overflow-hidden h-64 lg:h-128 "
-              style={{
-                background:
-                  "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/solar.jpg') center / cover no-repeat",
-              }}
+        <div className="flex flex-wrap container mx-auto px-16 py-16 gap-6">
+          <Card className="p-6 w-xs shadow-lg">
+            <Image
+              src="/solar.jpg"
+              alt="Mrs. Kechine"
+              width={72}
+              height={72}
+              className="object-cover rounded-xl w-full"
+              priority
             />
-          </div>
+            <div className="flex">
+              <Calendar className="w-4 h-4 text-gray-400 inline-block mr-2" />
+              <div className="text-xs text-gray-500 mb-2">March 2025</div>
+            </div>
+            <p className="text-sm -mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa debitis, rerum
+              quaerat accusamus architecto minus corrupti repellendus doloremque vel iusto totam,
+              distinctio sunt dicta labore enim iste ex corporis.
+            </p>
+            <button className="px-4 py-2 bg-amber-400 text-black rounded">Read more</button>
+          </Card>
+          <Card className="p-6 w-xs shadow-lg">
+            <Image
+              src="/solar.jpg"
+              alt="Mrs. Kechine"
+              width={72}
+              height={72}
+              className="object-cover rounded-xl w-full"
+              priority
+            />
+            <div className="flex">
+              <Calendar className="w-4 h-4 text-gray-400 inline-block mr-2" />
+              <div className="text-xs text-gray-500 mb-2">March 2025</div>
+            </div>
+            <p className="text-sm -mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa debitis, rerum
+              quaerat accusamus architecto minus corrupti repellendus doloremque vel iusto totam,
+              distinctio sunt dicta labore enim iste ex corporis.
+            </p>
+            <button className="px-4 py-2 bg-amber-400 text-black rounded">Read more</button>
+          </Card>
+          <Card className="p-6 w-xs shadow-lg">
+            <Image
+              src="/solar.jpg"
+              alt="Mrs. Kechine"
+              width={72}
+              height={72}
+              className="object-cover rounded-xl w-full"
+              priority
+            />
+            <div className="flex">
+              <Calendar className="w-4 h-4 text-gray-400 inline-block mr-2" />
+              <div className="text-xs text-gray-500 mb-2">March 2025</div>
+            </div>
+            <p className="text-sm -mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa debitis, rerum
+              quaerat accusamus architecto minus corrupti repellendus doloremque vel iusto totam,
+              distinctio sunt dicta labore enim iste ex corporis.
+            </p>
+            <button className="px-4 py-2 bg-amber-400 text-black rounded">Read more</button>
+          </Card>
         </div>
       </section>
 
