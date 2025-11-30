@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImage from "@/public/about-us.jpg";
 import Image from "next/image";
+import Logoipsum from "@/public/Logos/Logoipsum.svg";
 
 import Yohannes from "@/public/team/yohannes.png";
 import Rahwa from "@/public/team/rahwa.png";
@@ -19,34 +20,34 @@ const Page = () => {
       <div>
         <Navbar />
 
-        <main>
+        <main className="w-full">
           <section
-            className="w-full h-[640px] bg-cover bg-center flex items-center px-24"
+            className="w-full h-100 md:h-[640px] bg-cover bg-center flex items-center px-24"
             style={{
-              background: `
-                linear-gradient(188deg, rgba(35, 37, 54, 0.00) 36.12%, rgba(0, 80, 46, 0.50) 72.5%, rgba(0, 80, 46, 0.50) 96.89%, rgba(0, 80, 46, 0.50) 101.62%),
-                linear-gradient(320deg, rgba(0, 80, 46, 0.00) 22.61%, rgba(0, 80, 46, 0.43) 44.19%, rgba(0, 80, 46, 0.90) 65.77%, #00502E 79.44%, #00502E 97.57%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%),
-                url(${aboutImage.src}) lightgray -316px -381px / 144.853% 181.069% no-repeat
-              `,
+              backgroundImage: `
+      linear-gradient(188deg, rgba(35,37,54,0) 36.12%, rgba(0,80,46,0.5) 72.5%, rgba(0,80,46,0.5) 96.89%, rgba(0,80,46,0.5) 101.62%),
+      linear-gradient(320deg, rgba(0,80,46,0) 22.61%, rgba(0,80,46,0.43) 44.19%, rgba(0,80,46,0.9) 65.77%, #00502E 79.44%, #00502E 97.57%),
+      linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+      url(${aboutImage.src})
+    `,
             }}
           >
-            <span className="text-6xl font-bold w-2xl text-white leading-18">
+            <span className="text-4xl md:text-6xl font-bold w-2xl text-white leading-12 text-center md:text-left md:leading-18">
               We Exist To Create <br />
               Solutions <br /> With an Impact
             </span>
           </section>
-          <section className="self-stretch px-16 py-16 inline-flex flex-col justify-center items-center gap-16">
-            <div className="self-stretch flex justify-start items-center gap-4">
-              <div className="w-20 h-0 origin-top-left outline-2 -outline-offset-1 outline-gray-800"></div>
-              <div className="origin-top-left  justify-start text-gray-800 text-2xl font-bold  uppercase tracking-widest">
+          <section className=" px-4 md:px-16 py-16 inline-flex flex-col justify-center items-center gap-8 md:gap-16">
+            <div className="w-full flex justify-start items-center gap-4">
+              <div className="w-10 md:w-20 h-0 origin-top-left outline-2 -outline-offset-1 outline-gray-800"></div>
+              <div className="origin-top-left  justify-start text-gray-800 md:text-2xl font-bold  uppercase tracking-widest">
                 Know about us
               </div>
               <div className="w-16 h-0 origin-top-left rotate-90 outline -outline-offset-1 outline-gray-800"></div>
             </div>
-            <div className="w-full px-12 inline-flex justify-start items-start gap-24">
-              <div className="self-stretch inline-flex flex-col justify-start items-start gap-16">
-                <div className="justify-start text-gray-800 text-5xl font-bold  leading-[57.60px]">
+            <div className="w-full px-6 md:px-12 inline-flex flex-col md:flex-row justify-start items-start gap-12 md:gap-24">
+              <div className="inline-flex flex-col justify-start items-start gap-10 md:gap-16">
+                <div className="justify-start text-gray-800 text-3xl md:text-5xl font-bold leading-10 md:leading-[57.60px]">
                   We are a <br />
                   non-governmental <br />
                   organization
@@ -58,11 +59,11 @@ const Page = () => {
                 </div>
               </div>
               <div className="flex-1 inline-flex flex-col justify-start items-start gap-8">
-                <div className="self-stretch justify-start text-gray-800 text-xl font-bold leading-8">
+                <div className="justify-start text-gray-800 text-xl font-bold leading-8">
                   Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
                   risus tristique posuere.
                 </div>
-                <div className="self-stretch opacity-70 justify-start text-gray-800 text-base font-normal leading-6">
+                <div className="opacity-70 justify-start text-gray-800 text-base font-normal leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                   in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
                   interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim
@@ -91,7 +92,7 @@ const Page = () => {
               ></path>
             </svg>
             <div
-              className="absolute w-[1060px] h-100 bg-black top-0 rounded-3xl"
+              className="absolute w-80 md:w-[1060px] h-44 md:h-100 bg-black top-0 rounded-3xl"
               style={{
                 background: `url('/about-us.jpg') center / cover no-repeat`,
                 backgroundColor: "rgba(0,0,0,0.5)",
@@ -125,8 +126,8 @@ const Page = () => {
                 </div>
               </a>
             </div>
-            <div className="w-full px-28 pt-32 pb-32 bg-[#F7AD1A] inline-flex flex-col justify-start items-center gap-24">
-              <div className="inline-flex justify-start items-center gap-24">
+            <div className="w-full px-12 md:px-28 pt-32 pb-32 bg-[#F7AD1A] inline-flex flex-col justify-start items-center gap-24">
+              <div className="inline-flex  flex-col md:flex-rowjustify-start items-center gap-24">
                 <div className="w-full flex gap-4 flex-col">
                   <div className="justify-start text-gray-800 text-xl font-bold  uppercase tracking-widest">
                     Our Approaches
@@ -147,7 +148,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch inline-flex justify-start items-center gap-24">
+              <div className="inline-flex flex-col md:flex-row justify-start items-center gap-24">
                 <div className="flex gap-4 flex-col ">
                   <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
                     our mission
@@ -182,10 +183,10 @@ const Page = () => {
           </section>
           <section
             id="our-team"
-            className="w-full py-20 inline-flex flex-col justify-center items-center gap-16"
+            className="w-full py-10 md:py-20 inline-flex flex-col justify-center items-center gap-16"
           >
             <div className="flex flex-col justify-start items-start gap-4">
-              <div className="w-full text-center justify-start text-gray-800 text-5xl font-bold  leading-[57.60px]">
+              <div className="w-full text-center justify-start text-gray-800 text-3xl md:text-5xl font-bold  leading-[57.60px]">
                 Meet our team
               </div>
               <div className="w-full opacity-80 text-center justify-start text-zinc-600 text-base font-normal  leading-6">
@@ -193,10 +194,10 @@ const Page = () => {
                 eros elementum tristique.
               </div>
             </div>
-            <div className="w-[1240px] inline-flex justify-center items-center gap-12 flex-wrap content-center">
+            <div className="w-full inline-flex justify-center items-center gap-12 flex-wrap content-center">
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Yohannes}
                   alt="Yohannes Bushra"
                   width={240}
@@ -220,7 +221,7 @@ const Page = () => {
               </div>
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Rahwa}
                   alt="Rahwa Aregawi"
                   width={240}
@@ -244,7 +245,7 @@ const Page = () => {
               </div>
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Bisrat}
                   alt="Bisrat Genene"
                   width={240}
@@ -268,7 +269,7 @@ const Page = () => {
               </div>
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Henok}
                   alt="Henok Tsegaye"
                   width={240}
@@ -292,7 +293,7 @@ const Page = () => {
               </div>
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Nuhamin}
                   alt="Nuhamin Abate"
                   width={240}
@@ -316,7 +317,7 @@ const Page = () => {
               </div>
               <div className="inline-flex flex-col justify-start items-center gap-3">
                 <Image
-                  className="w-60 h-60 rounded-full"
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
                   src={Misgana}
                   alt="Misgana Belete"
                   width={240}
@@ -339,11 +340,25 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch px-16 flex flex-col justify-start items-start gap-12">
-              <div className="justify-start text-gray-800 text-2xl font-semibold  uppercase tracking-widest">
+            <div className="px-8 md:px-16 w-full flex flex-col justify-start items-start gap-12">
+              <div className="justify-start text-gray-800 text-xl md:text-2xl font-semibold uppercase tracking-widest">
                 our Supporters
               </div>
-              <LogoCarousel />
+              {/* md and above: show carousel */}
+              <div className="hidden md:block">
+                <LogoCarousel />
+              </div>
+
+              {/* small screens: show static logos */}
+              <div className="block md:hidden">
+                <div className="flex flex-wrap gap-10">
+                  {[...Array(6)].map((_, idx) => (
+                    <div key={idx}>
+                      <Image src={Logoipsum} alt="Logoipsum" className="w-20 h-auto" />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
         </main>
