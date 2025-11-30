@@ -180,7 +180,10 @@ const Page = () => {
               </div>
             </div>
           </section>
-          <section className="w-full py-20 inline-flex flex-col justify-center items-center gap-16">
+          <section
+            id="our-team"
+            className="w-full py-20 inline-flex flex-col justify-center items-center gap-16"
+          >
             <div className="flex flex-col justify-start items-start gap-4">
               <div className="w-full text-center justify-start text-gray-800 text-5xl font-bold  leading-[57.60px]">
                 Meet our team

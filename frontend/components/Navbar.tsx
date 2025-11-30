@@ -52,7 +52,7 @@ const Navigation = () => {
                   Our Approach
                 </Link>
                 <Link
-                  href="/about/our-teams"
+                  href="/about#our-team"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
                 >
                   Our Teams
