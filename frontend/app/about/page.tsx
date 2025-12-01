@@ -84,6 +84,7 @@ const Page = () => {
               </div>
             </div>
           </section>
+          {/* Mission,Vision */}
           <section className="w-full flex flex-col items-center justify-center relative ">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
@@ -92,7 +93,7 @@ const Page = () => {
               ></path>
             </svg>
             <div
-              className="absolute w-80 md:w-[1060px] h-44 md:h-100 bg-black top-0 rounded-3xl"
+              className="absolute w-80 md:w-[720px] md:h-80 lg:w-[1060px] h-44 lg:h-100 bg-black top-[-25]  d lg:top-0 rounded-3xl"
               style={{
                 background: `url('/about-us.jpg') center / cover no-repeat`,
                 backgroundColor: "rgba(0,0,0,0.5)",
@@ -126,10 +127,10 @@ const Page = () => {
                 </div>
               </a>
             </div>
-            <div className="w-full px-12 md:px-28 pt-32 pb-32 bg-[#F7AD1A] inline-flex flex-col justify-start items-center gap-24">
-              <div className="inline-flex  flex-col md:flex-rowjustify-start items-center gap-24">
+            <div className="w-full px-8 md:px-28 pt-32 pb-32 bg-[#F7AD1A] inline-flex flex-col justify-start items-center gap-24">
+              <div className="inline-flex  flex-col md:flex-rowjustify-start items-center gap-16 md:gap-24">
                 <div className="w-full flex gap-4 flex-col">
-                  <div className="justify-start text-gray-800 text-xl font-bold  uppercase tracking-widest">
+                  <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
                     Our Approaches
                   </div>
                   <div className="justify-start text-gray-800 text-3xl font-bold  leading-10">
@@ -148,7 +149,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="inline-flex flex-col md:flex-row justify-start items-center gap-24">
+              <div className="inline-flex flex-col md:flex-row justify-start items-center gap-16 md:gap-24">
                 <div className="flex gap-4 flex-col ">
                   <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
                     our mission
@@ -181,6 +182,7 @@ const Page = () => {
               </div>
             </div>
           </section>
+          {/* Our Team */}
           <section
             id="our-team"
             className="w-full py-10 md:py-20 inline-flex flex-col justify-center items-center gap-16"
@@ -340,8 +342,8 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <div className="px-8 md:px-16 w-full flex flex-col justify-start items-start gap-12">
-              <div className="justify-start text-gray-800 text-xl md:text-2xl font-semibold uppercase tracking-widest">
+            <div className="px-6 md:px-16 w-full flex flex-col justify-start items-start gap-12">
+              <div className="justify-start text-gray-800 text-xl md:text-2xl font-bold uppercase tracking-widest">
                 our Supporters
               </div>
               {/* md and above: show carousel */}
@@ -350,7 +352,7 @@ const Page = () => {
               </div>
 
               {/* small screens: show static logos */}
-              <div className="block md:hidden">
+              <div className="md:hidden  flex justify-center items-center p-4 ">
                 <div className="flex flex-wrap gap-10">
                   {[...Array(6)].map((_, idx) => (
                     <div key={idx}>
