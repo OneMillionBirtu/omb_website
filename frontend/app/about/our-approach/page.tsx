@@ -5,13 +5,40 @@ import Image from "next/image";
 import Aprroach from "@/public/Approach.png";
 
 const Page = () => {
+  const info = [
+    {
+      title: "Innovation",
+      description:
+        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+    },
+    {
+      title: "Finance",
+      description:
+        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+    },
+    {
+      title: "Policy",
+      description:
+        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+    },
+    {
+      title: "Forward & Backward Linkage",
+      description:
+        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+    },
+    {
+      title: "Skill & Capacity Building",
+      description:
+        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+    },
+  ];
   return (
     <>
       <Navbar />
 
       {/* HERO SECTION */}
       <section
-        className="w-full h-[540px] px-2.5 py-8 rotate-180 inline-flex flex-col justify-center items-start gap-6 overflow-hidden"
+        className="w-full h-64 md:h-[480px] lg:h-[540px] px-2.5 py-8 rotate-180 inline-flex flex-col justify-center items-start gap-6 overflow-hidden"
         style={{
           backgroundImage: `
             linear-gradient(278deg, rgba(35,37,54,0) 36.12%, rgba(0,80,46,0.5) 72.5%, rgba(0,80,46,0.5) 96.89%),
@@ -20,25 +47,26 @@ const Page = () => {
             url(${solarwork.src})
           `,
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "-148px -205px",
           backgroundSize: "117% 147%",
         }}
       >
-        <div className="rotate-180 w-full text-5xl px-12 font-bold text-white">Our Approach</div>
+        <div className="rotate-180 w-full text-2xl md:text-5xl px-12 font-bold text-white">
+          Our Approach
+        </div>
       </section>
 
       {/* TEXT BLOCK */}
-      <section className="px-12 py-16 flex flex-col gap-12">
+      <section className=" px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 flex flex-col gap-6 md:gap-12">
         <div className="flex items-center gap-2.5">
-          <div className="w-20 h-0 border-t-2 border-gray-800"></div>
-          <div className="text-gray-800 text-2xl font-bold uppercase tracking-widest">
+          <div className="w-12 md:w-20 h-0 border-t-2 border-gray-800"></div>
+          <div className="text-gray-800 text-xl md:text-2xl font-bold uppercase tracking-widest">
             Understanding Our Approach
           </div>
         </div>
 
-        <div className="flex gap-16 px-24">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 px-6 lg:px-24">
           <div className="w-72 flex flex-col gap-12">
-            <div className="text-gray-800 text-5xl font-bold leading-tight">
+            <div className="text-gray-800 text-4xl md:text-5xl font-bold leading-tight">
               We exist <br /> to <br /> Not Exist
             </div>
           </div>
@@ -72,7 +100,7 @@ const Page = () => {
       </section>
       {/* Approach Infographics */}
       <section className="w-full flex justify-center items-center">
-        <Image src={Aprroach} alt="approach infographics" />
+        <Image src={Aprroach} alt="approach infographics" className="w-80 md:w-108" />
       </section>
       {/* WAVE SECTION */}
       <section>
@@ -83,47 +111,37 @@ const Page = () => {
           ></path>
         </svg>
 
-        <div className="pb-16 bg-[#F7AD1A] flex flex-wrap justify-center gap-12">
+        <div className="px-8 pb-16  bg-[#F7AD1A] flex flex-wrap justify-center pt-6 gap-6 md:gap-8 lg:gap-12">
           {/* CARD COMPONENT */}
-          {[
-            "Innovation",
-            "Finance",
-            "Policy",
-            "Forward & Backward Linkage",
-            "Skill & Capacity Building",
-          ].map((title, i) => (
+          {info.map((info, i) => (
             <div
               key={i}
-              className="w-[479px] p-8 bg-white rounded-lg shadow-[0px_4px_12px_rgba(0,82,41,0.10)] flex flex-col gap-4"
+              className="md:w-[332px] lg:w-[440px] p-6 md:p-8 bg-white rounded-lg shadow-[0px_4px_12px_rgba(0,82,41,0.10)] flex flex-col gap-4"
             >
               <div className="w-14 h-14 rounded-full bg-linear-to-br from-emerald-900 to-emerald-800 flex items-center justify-center">
                 <div className="w-6 h-6 border-2 border-neutral-50"></div>
               </div>
 
-              <div className="text-neutral-800 text-2xl font-bold">{title}</div>
+              <div className="text-neutral-800 text-xl md:text-2xl font-bold">{info.title}</div>
 
-              <div className="text-neutral-500 text-base leading-6">
-                We identify and address market gaps that prevent communities from accessing
-                opportunities. By building functional markets and value chains, we create
-                sustainable pathways out of poverty.
-              </div>
+              <div className="text-neutral-500 text-base leading-6 ">{info.description}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* ELECTRIFY BANNER */}
-      <section className="container mx-auto px-16 py-12">
+      <section className="container mx-auto px-4 py-6 md:px-8 md:py-10 lg:px-16 lg:py-12">
         <div
-          className="rounded-xl overflow-hidden relative h-56 md:h-72"
+          className="rounded-xl overflow-hidden relative h-56 lg:h-72"
           style={{
             background:
-              "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('/livelihood.png') center / cover no-repeat",
+              "linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url('/livelihood.png') center / cover no-repeat",
           }}
         >
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center px-6 md:px-24">
             <div className="text-center text-white">
-              <h2 className="text-2xl md:text-4xl font-bold mb-8">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
                 You can contribute to Electrify Ethiopia by 2030
               </h2>
               <button className="px-6 py-2 bg-amber-400 text-black rounded">Donate →</button>
