@@ -8,7 +8,7 @@ export default function FindUsSection() {
 
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
           You can use the interactive map below to get directions, explore nearby areas, or plan
-          your visit. We're always happy to welcome you!
+          your visit. We &apos;re always happy to welcome you!
         </p>
 
         {/* Map Container */}

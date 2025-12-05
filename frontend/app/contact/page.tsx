@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -35,7 +34,7 @@ const formSchema = z.object({
   message: z.string().min(5, { message: "Message is required" }),
 });
 
-const contact = () => {
+const Contact = () => {
   // move hook usage inside component to follow Rules of Hooks
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -53,6 +52,7 @@ const contact = () => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+    // eslint-disable-next-line no-console
     console.log(values);
   }
 
@@ -79,7 +79,7 @@ const contact = () => {
                 </div>
               </div>
               <h1 className="lg:text-7xl text-6xl md:text-5xl font-bold mb-7">
-                We'd love to hear from you
+                We&apos;d love to hear from you
               </h1>
               <p className=" mb-7 text-amber-400 text-xl">
                 Have any question in mind or want to enquire more about One Million Birtu
@@ -94,7 +94,9 @@ const contact = () => {
         <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
           <div className="flex items-center justify-start mb-12 gap-2">
             <div className="w-12 h-0.75 bg-emerald-900 rounded-2xl" />
-            <h3 className="text-4xl font-semibold text-emerald-900 mr-4">WHAT'S ON YOUR MIND?</h3>
+            <h3 className="text-4xl font-semibold text-emerald-900 mr-4">
+              WHAT&apos;S ON YOUR MIND?
+            </h3>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 gap-8">
@@ -205,7 +207,7 @@ const contact = () => {
               </Form>
             </div>
             <div className="flex flex-col gap-6 justify-start">
-              <h4 className="text-2xl lg:text-3xl font-semibold text-gray-900">Let's talk!</h4>
+              <h4 className="text-2xl lg:text-3xl font-semibold text-gray-900">Let&apos;s talk!</h4>
 
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-white">
@@ -271,4 +273,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
