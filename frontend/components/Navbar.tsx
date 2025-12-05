@@ -133,16 +133,70 @@ const Navigation = () => {
               </button>
               <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link
-                  href="/news"
+                  href="/birtuinsights/casestudies"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
                 >
-                  Newsletter & Articles
+                  Case Studies
                 </Link>
                 <Link
-                  href="/resources"
+                  href="/birtuinsights/newsarticles"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
                 >
-                  Resources & Publications
+                  News and Articles
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <button
+                className={`font-medium transition-colors hover:text-primary flex items-center space-x-1 ${
+                  isActiveSection("/news") || isActiveSection("/resources")
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+              >
+                <span className="text-green-900">Our Programs</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link
+                  href="/birtuinsights/casestudies"
+                  className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
+                >
+                  Edel
+                </Link>
+                <Link
+                  href="/birtuinsights/newsarticles"
+                  className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
+                >
+                  Health
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <button
+                className={`font-medium transition-colors hover:text-primary flex items-center space-x-1 ${
+                  isActiveSection("/news") || isActiveSection("/resources")
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+              >
+                <span className="text-green-900">Resources</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link
+                  href="/resources/publications"
+                  className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
+                >
+                  Publications
+                </Link>
+                <Link
+                  href="/resources/benchmarks"
+                  className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
+                >
+                  Benchmarks
                 </Link>
               </div>
             </div>
@@ -187,7 +241,22 @@ const Navigation = () => {
               >
                 Our Work
               </Link>
-              <Link href="/news" className="font-medium text-muted-foreground hover:text-primary">
+              <Link
+                href="/birtuinsights/casestudies"
+                className="font-medium text-muted-foreground hover:text-primary"
+              >
+                Our Programs
+              </Link>
+              <Link
+                href="/resources/publications"
+                className="font-medium text-muted-foreground hover:text-primary"
+              >
+                Resources
+              </Link>
+              <Link
+                href="/birtuinsights/casestudies"
+                className="font-medium text-muted-foreground hover:text-primary"
+              >
                 Birtu Insights
               </Link>
               <Link
@@ -203,8 +272,10 @@ const Navigation = () => {
                 Notices
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button asChild>
-                  <Link href="/support">Donate</Link>
+                <Button asChild className="bg-amber-400">
+                  <Link href="/support" className="">
+                    Donate
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -108,7 +108,7 @@ export default function Page() {
         <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
           <div className="flex items-center justify-end mb-12">
             <h3 className="text-4xl font-semibold text-emerald-900 mr-4">OUR PROGRAMS</h3>
-            <div className="w-12 h-0.5 bg-emerald-900" />
+            <div className="w-12 h-0.75 rounded-2xl bg-emerald-900" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-26 gap-12">
