@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 const figma_home = () => {
   return (
-    <div className="w-[1280px] bg-white inline-flex flex-col justify-start items-start overflow-hidden">
+    <div className="w-7xl bg-white inline-flex flex-col justify-start items-start overflow-hidden">
       <div className="self-stretch px-11 py-6 bg-black/0 rounded-3xl inline-flex justify-between items-center overflow-hidden">
-        <img className="w-44 h-16" src="https://placehold.co/170x64" />
+        <Image className="w-44 h-16" src="https://placehold.co/170x64" alt="placeholder" />
         <div className="flex justify-start items-center gap-10 overflow-hidden">
           <div className="p-1.5 flex justify-start items-center gap-2">
             <div className="justify-start text-emerald-900 text-base font-bold font-['Roboto']">
@@ -76,7 +77,7 @@ const figma_home = () => {
           <div className="justify-start text-white text-2xl font-semibold font-['Roboto']">
             One Million Birtus
           </div>
-          <div className="w-[720px] h-0 outline outline-1 outline-offset-[-0.50px] outline-white"></div>
+          <div className="w-[720px] h-0 outline  outline-offset-[-0.50px] outline-white"></div>
           <div className="justify-start text-white text-2xl font-semibold font-['Roboto']">
             By 2030
           </div>
@@ -107,7 +108,7 @@ const figma_home = () => {
                 </div>
               </div>
               <div className="w-12 h-[600px] origin-top-left -rotate-90 flex flex-col justify-start items-center gap-3">
-                <div className="w-0 h-12 origin-top-left rotate-90 outline outline-2 outline-offset-[-1px] outline-emerald-900"></div>
+                <div className="w-0 h-12 origin-top-left rotate-90 outline  outline-offset-1 outline-emerald-900"></div>
                 <div className="origin-top-left rotate-90 justify-start text-emerald-900 text-2xl font-bold font-['Roboto'] uppercase tracking-widest">
                   Know About us
                 </div>
@@ -172,16 +173,20 @@ const figma_home = () => {
       </div>
       <div className="self-stretch flex flex-col justify-start items-start">
         <div className="w-[1283px] h-44 bg-zinc-900/80"></div>
-        <div className="w-[1280px] px-8 pt-8 pb-32 bg-zinc-900/80 flex flex-col justify-center items-end gap-40">
+        <div className="w-7xl px-8 pt-8 pb-32 bg-zinc-900/80 flex flex-col justify-center items-end gap-40">
           <div className="py-3 flex flex-col justify-start items-end gap-8">
             <div className="w-9 origin-top-left -rotate-90 flex flex-col justify-center items-center gap-6">
               <div className="origin-top-left rotate-90 justify-start text-amber-400 text-4xl font-bold font-['Roboto'] uppercase tracking-widest">
-                Our WHY’s
+                Our WHY&apos;s
               </div>
-              <div className="w-0 h-16 origin-top-left rotate-90 outline outline-2 outline-offset-[-1px] outline-amber-400"></div>
+              <div className="w-0 h-16 origin-top-left rotate-90 outline -outline-offset-1 outline-amber-400"></div>
             </div>
             <div className="w-[1216px] h-[543px] px-16 py-8 bg-black/0 rounded-[48px] inline-flex justify-center items-center gap-12">
-              <img className="w-96 h-[460px] rounded-[20px]" src="https://placehold.co/400x460" />
+              <Image
+                className="w-96 h-[460px] rounded-[20px]"
+                src="https://placehold.co/400x460"
+                alt="placeholder"
+              />
               <div className="flex-1 inline-flex flex-col justify-start items-start gap-12">
                 <div className="self-stretch flex flex-col justify-start items-start gap-1">
                   <div className="self-stretch inline-flex justify-start items-center gap-2.5">
@@ -204,8 +209,8 @@ const figma_home = () => {
                 </div>
                 <div className="self-stretch flex flex-col justify-center items-end gap-2">
                   <div className="self-stretch px-8 inline-flex justify-start items-center gap-3">
-                    <div className="w-6 h-0 outline outline-2 outline-offset-[-1px] outline-amber-400"></div>
-                    <div className="justify-start text-amber-400 text-4xl font-bold font-['Roboto'] leading-[48px]">
+                    <div className="w-6 h-0 outline  outline-offset-1 outline-amber-400"></div>
+                    <div className="justify-start text-amber-400 text-4xl font-bold font-['Roboto'] leading-12">
                       Mrs. Kechine
                     </div>
                   </div>
@@ -220,7 +225,7 @@ const figma_home = () => {
             <div className="self-stretch flex flex-col justify-center items-center gap-2.5">
               <div
                 data-property-1="Default"
-                className="px-4 py-9 origin-top-left -rotate-90 rounded-xl outline outline-[3px] outline-offset-[-3px] outline-amber-400 flex flex-col justify-center items-center gap-2.5"
+                className="px-4 py-9 origin-top-left -rotate-90 rounded-xl outline-[3px] outline-offset-[-3px] outline-amber-400 flex flex-col justify-center items-center gap-2.5"
               >
                 <div className="w-5 origin-top-left rotate-90 justify-start text-amber-400 text-base font-bold font-['Roboto'] uppercase tracking-widest">
                   read more
@@ -319,7 +324,7 @@ const figma_home = () => {
         <div className="self-stretch flex flex-col justify-start items-start gap-16">
           <div className="self-stretch flex flex-col justify-start items-start gap-9">
             <div className="w-9 flex flex-col justify-center items-center gap-6">
-              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-2 outline-offset-[-1px] outline-emerald-900"></div>
+              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-offset-1 outline-emerald-900"></div>
               <div className="origin-top-left rotate-90 justify-start text-emerald-900 text-4xl font-bold font-['Roboto'] uppercase tracking-widest">
                 OUR PROGRAMS{" "}
               </div>
@@ -382,15 +387,15 @@ const figma_home = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch px-16 py-20 bg-gradient-to-b from-emerald-900/90 to-black/70 flex flex-col justify-start items-start overflow-hidden">
+      <div className="self-stretch px-16 py-20 bg-linear-to-b from-emerald-900/90 to-black/70 flex flex-col justify-start items-start overflow-hidden">
         <div className="self-stretch flex flex-col justify-start items-start gap-16">
           <div className="self-stretch flex flex-col justify-start items-center gap-6">
             <div className="w-9 flex flex-col justify-center items-center gap-6">
-              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-2 outline-offset-[-1px] outline-amber-400"></div>
+              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-offset-1 outline-amber-400"></div>
               <div className="origin-top-left rotate-90 justify-start text-amber-400 text-4xl font-bold font-['Roboto'] uppercase tracking-widest">
                 Latest updates
               </div>
-              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-2 outline-offset-[-1px] outline-amber-400"></div>
+              <div className="w-16 h-0 origin-top-left rotate-90 outline outline-offset-1 outline-amber-400"></div>
             </div>
             <div className="self-stretch px-8 inline-flex justify-center items-center gap-2.5">
               <div className="w-[733px] text-center justify-start text-white text-2xl font-semibold font-['Roboto'] leading-7">
@@ -399,13 +404,13 @@ const figma_home = () => {
             </div>
           </div>
           <div className="self-stretch inline-flex justify-between items-center">
-            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] shadow-[0px_40px_40px_0px_rgba(0,0,0,0.09)] shadow-[0px_90px_54px_0px_rgba(0,0,0,0.05)] shadow-[0px_160px_64px_0px_rgba(0,0,0,0.01)] shadow-[0px_250px_70px_0px_rgba(0,0,0,0.00)] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
+            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] outline outline-offset-1 outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
               <div className="inline-flex justify-start items-start gap-2.5">
                 <div className="w-4 h-4 relative">
-                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-3 left-[2px] top-[2.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-0 left-[2px] top-[6.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-3 left-0.5 top-[2.67px] absolute outline outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-0 left-0.5 top-[6.67px] absolute outline outline-offset-[-0.67px] outline-neutral-500"></div>
                 </div>
                 <div className="w-20 h-5 justify-center">
                   <span className="text-neutral-500 text-sm font-normal font-['Roboto'] leading-5">
@@ -431,24 +436,24 @@ const figma_home = () => {
                   by 200% using innovative techniques.
                 </div>
               </div>
-              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline outline-1 outline-offset-[-1px] outline-neutral-200">
+              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline  outline-offset-1 outline-neutral-200">
                 <div className="w-20 h-4 left-[13px] top-[9px] absolute text-center justify-center text-neutral-800 text-sm font-medium font-['Inter'] leading-5">
                   Read More
                 </div>
-                <div className="w-4 h-4 left-[101.19px] top-[10px] absolute">
-                  <div className="w-1 h-1 left-[10px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2 h-2 left-[6.67px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2.5 h-2.5 left-[2px] top-[4px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
+                <div className="w-4 h-4 left-[101.19px] top-2.5 absolute">
+                  <div className="w-1 h-1 left-2.5 top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2 h-2 left-[6.67px] top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2.5 h-2.5 left-0.5 top-1 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
                 </div>
               </div>
             </div>
-            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] shadow-[0px_40px_40px_0px_rgba(0,0,0,0.09)] shadow-[0px_90px_54px_0px_rgba(0,0,0,0.05)] shadow-[0px_160px_64px_0px_rgba(0,0,0,0.01)] shadow-[0px_250px_70px_0px_rgba(0,0,0,0.00)] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
+            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] outline  outline-offset-1 outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
               <div className="inline-flex justify-start items-start gap-2.5">
                 <div className="w-4 h-4 relative">
-                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-3 left-[2px] top-[2.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-0 left-[2px] top-[6.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-3 left-0.5 top-[2.67px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-0 left-0.5 top-[6.67px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
                 </div>
                 <div className="w-20 h-5 justify-center">
                   <span className="text-neutral-500 text-sm font-normal font-['Roboto'] leading-5">
@@ -474,24 +479,24 @@ const figma_home = () => {
                   by 200% using innovative techniques.
                 </div>
               </div>
-              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline outline-1 outline-offset-[-1px] outline-neutral-200">
+              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline  outline-offset-1 outline-neutral-200">
                 <div className="w-20 h-4 left-[13px] top-[9px] absolute text-center justify-center text-neutral-800 text-sm font-medium font-['Inter'] leading-5">
                   Read More
                 </div>
-                <div className="w-4 h-4 left-[101.19px] top-[10px] absolute">
-                  <div className="w-1 h-1 left-[10px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2 h-2 left-[6.67px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2.5 h-2.5 left-[2px] top-[4px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
+                <div className="w-4 h-4 left-[101.19px] top-2.5 absolute">
+                  <div className="w-1 h-1 left-2.5 top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2 h-2 left-[6.67px] top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2.5 h-2.5 left-0.5 top-1 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
                 </div>
               </div>
             </div>
-            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] shadow-[0px_40px_40px_0px_rgba(0,0,0,0.09)] shadow-[0px_90px_54px_0px_rgba(0,0,0,0.05)] shadow-[0px_160px_64px_0px_rgba(0,0,0,0.01)] shadow-[0px_250px_70px_0px_rgba(0,0,0,0.00)] outline outline-1 outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
+            <div className="w-80 p-6 bg-white rounded-lg shadow-[0px_10px_22px_0px_rgba(0,0,0,0.10)] outline  outline-offset-1 outline-neutral-200 inline-flex flex-col justify-start items-start gap-5">
               <div className="inline-flex justify-start items-start gap-2.5">
                 <div className="w-4 h-4 relative">
-                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-3 left-[2px] top-[2.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
-                  <div className="w-3 h-0 left-[2px] top-[6.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-3 left-0.5 top-[2.67px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
+                  <div className="w-3 h-0 left-0.5 top-[6.67px] absolute outline  outline-offset-[-0.67px] outline-neutral-500"></div>
                 </div>
                 <div className="w-20 h-5 justify-center">
                   <span className="text-neutral-500 text-sm font-normal font-['Roboto'] leading-5">
@@ -517,26 +522,26 @@ const figma_home = () => {
                   by 200% using innovative techniques.
                 </div>
               </div>
-              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline outline-1 outline-offset-[-1px] outline-neutral-200">
+              <div className="w-32 h-9 relative bg-amber-400 rounded-md outline  outline-offset-1 outline-neutral-200">
                 <div className="w-20 h-4 left-[13px] top-[9px] absolute text-center justify-center text-neutral-800 text-sm font-medium font-['Inter'] leading-5">
                   Read More
                 </div>
-                <div className="w-4 h-4 left-[101.19px] top-[10px] absolute">
-                  <div className="w-1 h-1 left-[10px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2 h-2 left-[6.67px] top-[2px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
-                  <div className="w-2.5 h-2.5 left-[2px] top-[4px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-neutral-800"></div>
+                <div className="w-4 h-4 left-[101.19px] top-2.5 absolute">
+                  <div className="w-1 h-1 left-2.5 top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2 h-2 left-[6.67px] top-0.5 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
+                  <div className="w-2.5 h-2.5 left-0.5 top-1 absolute outline  outline-offset-[-0.67px] outline-neutral-800"></div>
                 </div>
               </div>
             </div>
           </div>
           <div className="self-stretch flex flex-col justify-start items-center gap-4">
-            <div className="w-56 h-11 relative bg-gradient-to-b from-amber-400 to-amber-400 rounded-md">
-              <div className="w-32 h-4 left-[32px] top-[13px] absolute text-center justify-center text-black text-sm font-semibold font-['Inter'] leading-5">
+            <div className="w-56 h-11 relative bg-linear-to-b from-amber-400 to-amber-400 rounded-md">
+              <div className="w-32 h-4 left-8 top-[13px] absolute text-center justify-center text-black text-sm font-semibold font-['Inter'] leading-5">
                 View All Resources
               </div>
               <div className="w-5 h-4 left-[177.82px] top-[13.61px] absolute">
-                <div className="w-3.5 h-0 left-[2px] top-[8px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-black"></div>
-                <div className="w-1.5 h-2.5 left-[10px] top-[3.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-black"></div>
+                <div className="w-3.5 h-0 left-0.5 top-2 absolute outline  outline-offset-[-0.67px] outline-black"></div>
+                <div className="w-1.5 h-2.5 left-2.5 top-[3.33px] absolute outline  outline-offset-[-0.67px] outline-black"></div>
               </div>
             </div>
           </div>
@@ -554,7 +559,7 @@ const figma_home = () => {
                   Donate{" "}
                 </div>
                 <div className="px-px py-0.5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-                  <div className="w-4 h-2 outline outline-1 outline-offset-[-0.50px] outline-black"></div>
+                  <div className="w-4 h-2 outline  outline-offset-[-0.50px] outline-black"></div>
                 </div>
               </div>
             </div>
@@ -567,7 +572,7 @@ const figma_home = () => {
             <div className="justify-start text-gray-800 text-2xl font-medium font-['Roboto'] uppercase tracking-widest">
               our Supporters
             </div>
-            <div className="flex-1 h-0 origin-top-left rotate-180 outline outline-1 outline-offset-[-0.50px] outline-neutral-200"></div>
+            <div className="flex-1 h-0 origin-top-left rotate-180 outline outline-offset-[-0.50px] outline-neutral-200"></div>
           </div>
           <div className="self-stretch px-8 inline-flex justify-between items-center">
             <div className="w-32 h-7 relative">
@@ -596,7 +601,7 @@ const figma_home = () => {
           <div className="flex-1 self-stretch flex justify-between items-start">
             <div className="w-72 flex justify-center items-center flex-wrap content-center">
               <div className="flex-1 inline-flex flex-col justify-center items-start gap-4">
-                <img className="w-56 h-24" src="https://placehold.co/224x89" />
+                <Image className="w-56 h-24" src="https://placehold.co/224x89" alt="placeholder" />
                 <div className="self-stretch justify-start text-white text-base font-normal font-['Roboto'] leading-5">
                   Empowering Ethiopian livelihoods through climate-smart technologies,{" "}
                 </div>
@@ -710,7 +715,7 @@ const figma_home = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1280.02px] h-0 left-[-0.01px] top-[310px] absolute outline outline-1 outline-offset-[-0.50px] outline-white"></div>
+        <div className="w-[1280.02px] h-0 left-[-0.01px] top-[310px] absolute outline outline-offset-[-0.50px] outline-white"></div>
       </div>
     </div>
   );

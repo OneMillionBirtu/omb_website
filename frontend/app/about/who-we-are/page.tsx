@@ -1,12 +1,38 @@
 import Navbar from "@/components/Navbar";
-import React from "react";
-import Homeback2 from "@/public/homeback2.jpg";
+import solar from "@/public/solar.jpg";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Students from "@/public/Education.png";
 import DairyFarmer from "@/public/dairyFarmer.jpg";
 
 const page = () => {
+  const targets = [
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "4597+",
+      title: "Improved women esteem",
+      description: "contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "4597+",
+      title: "Improved women esteem",
+      description: "contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "4597+",
+      title: "Improved women esteem",
+      description: "contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "4597+",
+      title: "Improved women esteem",
+      description: "contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -59,7 +85,7 @@ const page = () => {
         <div className=" h-fit w-full py-8 lg:px-16 lg:py-16 flex flex-col justify-start items-start gap-6">
           <div className="inline-flex flex-col lg:flex-row justify-start items-center gap-6 lg:gap-14">
             <div className="w-full lg:h-96 inline-flex flex-col justify-start items-start gap-10">
-              <div className="self-stretch text-right justify-start text-gray-800 text-4xl md:text-5xl font-bold  leading-[57.60px]">
+              <div className="w-full text-right justify-start text-gray-800 text-4xl md:text-5xl font-bold  leading-[57.60px]">
                 Our Whys
               </div>
               <div className="flex flex-col lg:flex-row  gap-6 h-auto justify-center items-center text-justify ">
@@ -206,6 +232,52 @@ const page = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      {/*  future target*/}
+      <section
+        style={{
+          background: `linear-gradient(0deg, rgba(14, 34, 25, 0.90) 0%, rgba(14, 34, 25, 0.80) 100%), url(${solar.src}) lightgray 70% / cover no-repeat`,
+        }}
+        className="px-4 py-12 md:px-12 md:py-12 flex flex-col justify-center items-center gap-8 md:gap-16"
+      >
+        <div className="w-full flex flex-col justify-center items-center gap-3">
+          <div className="text-amber-400 text-3xl md:text-5xl font-bold uppercase tracking-widest">
+            Our Targets
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col md:flex-row md:flex-wrap  justify-center items-center gap-6">
+          {targets.map((item, index) => (
+            <div
+              key={index}
+              className="flex-1 px-4 md:px-8 md:min-w-80 lg:max-w-108 py-8 bg-emerald-900/50 rounded-3xl inline-flex  justify-start items-center gap-8"
+            >
+              {/* SVG Circle */}
+
+              <div className="flex flex-row md:flex-col justify-start items-center gap-2 ">
+                <div className="flex flex-col justify-center items-center  ">
+                  <div
+                    className="w-32 h-32 flex justify-center items-center"
+                    dangerouslySetInnerHTML={{ __html: item.svg }}
+                  ></div>
+                  <div className="text-amber-400 text-center text-4xl font-bold capitalize leading-9">
+                    {item.value}
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <div className="text-white text-center text-xl font-semibold leading-7">
+                    {item.title}
+                  </div>
+
+                  <div className="w-full text-center text-green-200 text-base font-normal leading-5">
+                    {item.description}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
