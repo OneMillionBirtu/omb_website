@@ -79,43 +79,23 @@ const Navigation = () => {
               </Link>
               <div className="absolute top-full left-0 mt-1 w-56 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link
-                  href="/livelihood"
+                  href="/ourwork/livelihood"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
                 >
                   Livelihood
                 </Link>
                 <Link
-                  href="/health"
+                  href="/ourwork/health"
                   className=" text-green-900 block px-4 py-2 text-sm hover:bg-muted"
                 >
                   Health
                 </Link>
                 <Link
-                  href="/education"
+                  href="/ourwork/education"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted"
                 >
                   Education
                 </Link>
-                <div className="relative group/nested">
-                  <div className="px-4 py-2 text-sm hover:bg-muted flex items-center justify-between cursor-pointer">
-                    <span className="text-green-900">Programs</span>
-                    <ChevronDown className="w-3 h-3 -rotate-90" />
-                  </div>
-                  <div className="absolute left-full top-0 ml-1 w-48 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200">
-                    <Link
-                      href="/programs/edel"
-                      className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
-                    >
-                      EDEL
-                    </Link>
-                    <Link
-                      href="/programs/health"
-                      className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
-                    >
-                      Health Program
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
 
