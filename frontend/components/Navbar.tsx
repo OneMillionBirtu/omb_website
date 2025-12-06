@@ -91,7 +91,7 @@ const Navigation = () => {
                   Health
                 </Link>
                 <Link
-                  href="ourwork/education"
+                  href="/ourwork/education"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted"
                 >
                   Education
