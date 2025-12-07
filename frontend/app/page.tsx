@@ -6,6 +6,17 @@ import Footer from "@/components/Footer";
 import { Calendar, ExternalLink } from "lucide-react";
 import Head from "next/head";
 
+export const metadata = {
+  title: "One Million Birtu | Empowering Communities in Ethiopia",
+  description: "One Million Birtu is a community initiative empowering Ethiopian women and youth.",
+  openGraph: {
+    title: "One Million Birtu",
+    description: "Empowering Ethiopian communities through impactful initiatives.",
+    url: "https://onemillionbirtu.org/",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <>
@@ -13,13 +24,13 @@ export default function Home() {
         <title>One Million Birtu | Empowering Communities in Ethiopia</title>
         <meta
           name="description"
-          content="One Million Birtu is a community initiative empowering Ethiopian women and youth."
+          content="One Million Birtu is an NGO  dedicated to Empowering Livelihoods Through Climate-Smart Technologies"
         />
         <link rel="canonical" href="https://onemillionbirtu.org/" />
         <meta property="og:title" content="One Million Birtu" />
         <meta
           property="og:description"
-          content="Empowering Ethiopian communities through impactful initiatives."
+          content="Empowering Livelihoods Through Climate-Smart Technologies"
         />
         <meta property="og:url" content="https://onemillionbirtu.org/" />
         <meta property="og:type" content="website" />
