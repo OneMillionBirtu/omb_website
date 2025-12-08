@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#013D23] text-white">
       <div className="container mx-auto px-16 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-24 justify-center ">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-24 justify-center ">
           <div className="flex flex-col gap-4 md:gap-6 items-center ">
             <div className="w-48 h-28 md:w-48 md:h-24 relative">
               <Image src="/Omb_Eng_Yellow.svg" alt="OMB logo" fill className="object-contain" />
@@ -28,9 +28,9 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4 mt-4">
+          <div className="flex flex-col items-center gap-2 md:gap-4 mt-4">
             <h5 className="text-xl font-semibold ">Quick Links</h5>
-            <ul className="text-lg space-y-2 text-center text-white/90">
+            <ul className="text-lg space-y-1 md:space-y-2 text-center text-white/90">
               <li>
                 <Link
                   href="/"
@@ -66,9 +66,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-4 mt-4 items-center">
+          <div className="flex flex-col gap-4 md:gap-4 items-center">
             <h5 className="text-xl font-semibold">Birtu Insights</h5>
-            <ul className="text-lg space-y-2 text-center text-white/90">
+            <ul className="text-lg  space-y-1 md:space-y-2 text-center text-white/90">
               <li>
                 <Link
                   href="/news"
