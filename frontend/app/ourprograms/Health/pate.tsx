@@ -7,7 +7,7 @@ import React from "react";
 // import Navbar from "@/components/Navbar";
 import UnderDevelopment from "@/components/underdevelopment";
 
-const HealthPage = () => {
+const HealthProgram = () => {
   return (
     // <div className="bg-white text-slate-900">
     //   <Navbar />
@@ -223,4 +223,4 @@ const HealthPage = () => {
   );
 };
 
-export default HealthPage;
+export default HealthProgram;
