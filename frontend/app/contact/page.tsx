@@ -6,6 +6,9 @@ import { z } from "zod";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
+import { FaRegClock } from "react-icons/fa6";
+
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { FaFacebookSquare } from "react-icons/fa";
 
 import { Mail } from "lucide-react";
@@ -62,26 +65,26 @@ const Contact = () => {
 
       {/* Hero - Areas of Work */}
       <header
-        className="relative overflow-hidden"
+        className="relative overflow-hidden h-128 lg:h-164 flex items-center"
         style={{
           background:
             "linear-gradient(180deg, rgba(0, 80, 46, 0.90) 35.58%, rgba(0, 0, 0, 0.72) 100%), url('/wateringMan.png') lightgray 50% / cover no-repeat",
         }}
       >
-        <div className="container mx-auto px-26 py-20">
+        <div className="container mx-auto px-6 lg:px-24 lg:py-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-2 items-start">
             {/* Left copy */}
             <div className="flex  flex-col text-white max-w-xl lg:p-4 lg:pr-8">
-              <div className="flex items-center gap-3 mb-16">
-                <div className="w-12 h-0.5 bg-amber-400" />
-                <div className="uppercase text-4xl text-amber-400 tracking-widest font-semibold">
+              <div className="flex items-center gap-2 md:gap-4 mb-16">
+                <div className="w-8 md:w-12 h-1 bg-amber-400" />
+                <div className="uppercase text-xl md:text-3xl text-amber-400 tracking-widest font-semibold">
                   Contact Us
                 </div>
               </div>
-              <h1 className="lg:text-7xl text-6xl md:text-5xl font-bold mb-7">
+              <h1 className="lg:text-6xl text-4xl md:text-5xl font-bold mb-7">
                 We&apos;d love to hear from you
               </h1>
-              <p className=" mb-7 text-amber-400 text-xl">
+              <p className=" mb-7 text-amber-400 text-base md:text-xl">
                 Have any question in mind or want to enquire more about One Million Birtu
                 initiatives? Please feel free to contact us through the form or the following means.
               </p>
@@ -91,20 +94,17 @@ const Contact = () => {
       </header>
 
       <section className="bg-white">
-        <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
-          <div className="flex items-center justify-start mb-12 gap-2">
-            <div className="w-12 h-0.75 bg-emerald-900 rounded-2xl" />
-            <h3 className="text-4xl font-semibold text-emerald-900 mr-4">
+        <div className="flex flex-col container mx-auto px-4 py-8 md:px-16 md:py-16 gap-12  md:gap-6">
+          <div className="flex items-center justify-start md:mb-12 gap-2">
+            <div className="w-8 md:w-12 h-0.75 bg-emerald-900 rounded-2xl" />
+            <h3 className="text-2xl md:text-4xl font-semibold text-emerald-900 mr-4">
               WHAT&apos;S ON YOUR MIND?
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 gap-8">
+          <div className="grid grid-cols-1 px-4 md:px-12 lg:grid-cols-2 lg:gap-24 gap-8">
             {/* form card */}
-            <div className="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm">
-              <h4 className="hidden lg:block text-lg font-medium text-gray-700 mb-4">
-                Get in touch
-              </h4>
+            <div className="bg-white order-2 lg:order-1 rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -113,7 +113,7 @@ const Contact = () => {
                       name="firstName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>First Name</FormLabel>
+                          <FormLabel className="text-xl">First Name</FormLabel>
                           <FormControl>
                             <Input placeholder="Jhon Doe" {...field} />
                           </FormControl>
@@ -126,7 +126,7 @@ const Contact = () => {
                       name="lastName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Last Name</FormLabel>
+                          <FormLabel className="text-xl">Last Name</FormLabel>
                           <FormControl>
                             <Input placeholder="Jhon Doe" {...field} />
                           </FormControl>
@@ -142,7 +142,7 @@ const Contact = () => {
                       name="phone"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Phone Number</FormLabel>
+                          <FormLabel className="text-xl">Phone Number</FormLabel>
                           <FormControl>
                             <Input placeholder="09xxxxxxxx" {...field} />
                           </FormControl>
@@ -155,7 +155,7 @@ const Contact = () => {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email</FormLabel>
+                          <FormLabel className="text-xl">Email</FormLabel>
                           <FormControl>
                             <Input placeholder="Example@example.com" {...field} />
                           </FormControl>
@@ -170,7 +170,7 @@ const Contact = () => {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel className="text-xl">Subject</FormLabel>
                         <FormControl>
                           <Input placeholder="Subject" {...field} />
                         </FormControl>
@@ -184,12 +184,12 @@ const Contact = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel className="text-xl">Message</FormLabel>
                         <FormControl>
                           <textarea
                             {...field}
                             rows={7}
-                            className="w-full rounded-md border border-gray-200 p-3 resize-vertical text-sm"
+                            className="w-full rounded-md border border-gray-200 p-3 resize-vertical text-base"
                             placeholder="write your message here...."
                           />
                         </FormControl>
@@ -199,46 +199,58 @@ const Contact = () => {
                   />
 
                   <div>
-                    <Button type="submit" className="w-full bg-[#232433] text-white py-4">
+                    <Button
+                      type="submit"
+                      className="w-full bg-[#232433] text-white py-6 text-xl cursor-pointer"
+                    >
                       Get in Touch
                     </Button>
                   </div>
                 </form>
               </Form>
             </div>
-            <div className="flex flex-col gap-6 justify-start">
+            <div className="flex flex-col gap-6 justify-start order-1 lg:order-2">
               <h4 className="text-2xl lg:text-3xl font-semibold text-gray-900">Let&apos;s talk!</h4>
 
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-white">
-                  <Phone size={20} />
+              <div className="gap-3 flex flex-col md:gap-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-black ">
+                    <Phone size={24} />
+                  </div>
+                  <div>
+                    <div className="text-base text-gray-600">+251 9012346514</div>
+                  </div>
                 </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-black ">
+                    <Mail size={24} />
+                  </div>
+                  <div>
+                    <div className="text-base text-gray-600">hello@largerthani.com</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-gray-200 md:my-4" />
+
+              <div className="flex flex-col gap-4 md:gap-6">
                 <div>
-                  <div className="text-sm text-gray-600">+251 9012346514</div>
+                  <h5 className="font-semibold text-gray-900 mb-2 text-2xl">Headoffice</h5>
+                  <div className="text-base text-gray-600 flex items-center gap-2">
+                    <HiOutlineOfficeBuilding size={24} />
+                    Abyssinia Building, Bole-Medhanyalem , Addis Ababa, Ethiopia.
+                  </div>
                 </div>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center text-white">
-                  <Mail size={20} />
-                </div>
+                <div className="border-t border-gray-200 md:my-4" />
                 <div>
-                  <div className="text-sm text-gray-600">hello@largerthani.com</div>
+                  <h5 className="font-semibold text-gray-900 mt-4 mb-2 text-2xl">Office Hours</h5>
+                  <div className="text-base text-gray-600 flex items-center gap-2">
+                    {" "}
+                    <FaRegClock size={20} />
+                    Monday - Friday: 8:00 AM - 6:00 PM
+                  </div>
                 </div>
-              </div>
-
-              <div className="border-t border-gray-200 my-4" />
-
-              <div>
-                <h5 className="font-semibold text-gray-900 mb-2">Headoffice</h5>
-                <div className="text-sm text-gray-600">
-                  Abyssinia Building, Bole-Medhanyalem , Addis Ababa, Ethiopia.
-                </div>
-              </div>
-
-              <div>
-                <h5 className="font-semibold text-gray-900 mt-4 mb-2">Office Hours</h5>
-                <div className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</div>
               </div>
             </div>
           </div>
@@ -246,21 +258,30 @@ const Contact = () => {
       </section>
 
       <div className="w-full bg-amber-400 flex flex-col items-center justify-center py-12 px-16 gap-6 text-center">
-        <h1 className="text-4xl font-semibold">Follow us</h1>
-        <p className="text-2xl text-[#013D23] lg:w-1/2 md:w-3/4 sm:w-full">
+        <h1 className="text-4xl font-bold">Follow us</h1>
+        <p className="text-xl font-light text-[#013D23] lg:w-1/2 md:w-3/4 sm:w-full">
           Stay connected with our latest stories and impact through our social media channels.
         </p>
         <div className="flex gap-4">
-          <Button className="bg-[#013D23] text-white flex items-center p-6 text-md font-normal">
-            <IoLogoLinkedin size={30} className="ml-1" />
+          <Button
+            size="lg"
+            className="bg-[#013D23] cursor-pointer text-white flex items-center  md:text-base font-normal"
+          >
+            <IoLogoLinkedin size={30} />
             LinkedIn
           </Button>
-          <Button className="bg-[#013D23] text-white p-6 text-md flex items-center font-normal">
-            <FaFacebookSquare size={30} className="ml-1" />
+          <Button
+            size="lg"
+            className="bg-[#013D23] cursor-pointer text-white  md:text-base flex items-center font-normal"
+          >
+            <FaFacebookSquare size={30} />
             Facebook
           </Button>
-          <Button className="bg-[#013D23] text-white p-6 text-md flex items-center font-normal">
-            <FaSquareXTwitter size={40} className="ml-1" />
+          <Button
+            size="lg"
+            className="bg-[#013D23] cursor-pointer text-white  md:text-base flex items-center font-normal"
+          >
+            <FaSquareXTwitter size={40} />
             Twitter
           </Button>
         </div>
