@@ -140,13 +140,13 @@ const Navigation = () => {
               </button>
               <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link
-                  href="/birtuinsights/casestudies"
+                  href="/ourprograms/EDEL"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-t-lg"
                 >
                   Edel
                 </Link>
                 <Link
-                  href="/birtuinsights/newsarticles"
+                  href="/ourprograms/Health"
                   className="text-green-900 block px-4 py-2 text-sm hover:bg-muted rounded-b-lg"
                 >
                   Health
