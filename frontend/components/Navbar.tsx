@@ -198,7 +198,7 @@ const Navigation = () => {
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-destructive rounded-full"></span>
             </Link>
             <Button asChild className="bg-amber-400 text-green-900">
-              <Link href="/support">Donate</Link>
+              <Link href="/donate">Donate</Link>
             </Button>
           </div>
 
@@ -253,7 +253,7 @@ const Navigation = () => {
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button asChild className="bg-amber-400">
-                  <Link href="/support" className="">
+                  <Link href="/donate" className="">
                     Donate
                   </Link>
                 </Button>
