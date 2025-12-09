@@ -6,16 +6,12 @@ import Image from "next/image";
 import knowldege from "@/public/hero-image.jpg";
 import interview from "@/public/Livelihood_interview.jpg";
 import incubation from "@/public/KaleWork.jpg";
-import stonks from "@/public/Icons/stonks.svg";
-import incu_graphics from "@/public/Icons/incu_graphics.png";
 
-import { FaCoins } from "react-icons/fa";
-
-import { PiBooks } from "react-icons/pi";
-import { FaRegCircleCheck } from "react-icons/fa6";
 import { ArrowRight, Lamp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
+import LivelihoodCard from "@/components/EDELCard";
+import { LivelihoodSections } from "@/data/Edelcontent";
 
 const page = () => {
   return (
@@ -242,7 +238,7 @@ const page = () => {
           KEY COMPONENTS
         </div>
         {/* components */}
-        <div className="flex flex-col gap-12">
+        {/* <div className="flex flex-col gap-12">
           <div className="px-9 py-12 rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
             <div className="flex-1  inline-flex flex-col justify-start items-start gap-3">
               <div className=" flex flex-col justify-start items-start">
@@ -698,7 +694,10 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        {LivelihoodSections.map((section, index) => (
+          <LivelihoodCard key={index} {...section} />
+        ))}
       </section>
       <div className="container mx-auto px-6 md:px-10 lg:px-16 mb-12">
         <div className="bg-amber-400 rounded-3xl p-8 md:p-10 lg:p-12 grid gap-10 lg:grid-cols-[1fr_1.1fr] items-center shadow-lg">
