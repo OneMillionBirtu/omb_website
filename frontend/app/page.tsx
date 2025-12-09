@@ -54,9 +54,9 @@ export default function Home() {
             <div className="relative container mx-auto px-4 flex h-full items-center">
               <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left text-primary-foreground animate-fade-in lg:pl-14">
                 <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Empowering Livelihoods Through Climate-Smart Technologies
+                  Empowering the Under served through Climate Smart Technologies
                 </h1>
-                <h2 className="hidden sm:block text-lg sm:text-xl md:text-3xl mb-6 text-primary-foreground/90 leading-relaxed">
+                <h2 className="hidden sm:block text-base md:text-2xl mb-6 text-primary-foreground/90 leading-relaxed">
                   Building sustainable markets and resilient communities across Ethiopia
                 </h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
