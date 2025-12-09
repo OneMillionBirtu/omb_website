@@ -15,6 +15,7 @@ import { PiBooks } from "react-icons/pi";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { ArrowRight, Lamp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -24,10 +25,10 @@ const page = () => {
         <div className="self-stretch h-[522px] p-3 rounded-3xl inline-flex justify-between items-center overflow-hidden">
           <div className="w-[480px] self-stretch px-7 py-8 rounded-2xl inline-flex flex-col justify-start items-start gap-6 overflow-hidden">
             <div className="self-stretch flex flex-col justify-start items-start gap-8">
-              <div className="self-stretch justify-start text-black text-6xl font-black font-['Lato'] leading-[76.80px]">
+              <div className="self-stretch justify-start text-black text-6xl font-black  leading-[76.80px]">
                 EDEL - Program
               </div>
-              <div className="self-stretch justify-start text-black text-2xl font-bold font-['Lato'] leading-7">
+              <div className="self-stretch justify-start text-black text-2xl font-bold  leading-7">
                 Enabling DRE Ecosystem For Livelihoods in Ethiopia
               </div>
               <div className="self-stretch h-28 justify-start text-black text-base font-normal  leading-6">
@@ -39,7 +40,12 @@ const page = () => {
           </div>
           <div className="w-[616.87px] flex justify-start items-center gap-3">
             <div className="flex-1 h-[480px] inline-flex flex-col justify-start items-start gap-3 overflow-hidden">
-              <div className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden">
+              <div
+                className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
+                style={{
+                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
+                }}
+              >
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
                   Livelihood &<br />
                   Finance
@@ -51,7 +57,12 @@ const page = () => {
                   <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
                 </div>
               </div>
-              <div className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden">
+              <div
+                className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
+                style={{
+                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
+                }}
+              >
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
                   Knowledge{" "}
                 </div>
@@ -67,7 +78,7 @@ const page = () => {
               <div
                 className="flex-1 self-stretch px-4 py-6 bg-black/50 rounded-2xl inline-flex flex-col justify-end items-start gap-4 overflow-hidden"
                 style={{
-                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${Homeback2.src}) lightgray 50% / cover no-repeat`,
+                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
                 }}
               >
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
@@ -176,17 +187,17 @@ const page = () => {
                   <div className="w-80 h-50 left-0 top-[329px] absolute bg-black/30 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.10)]" />
 
                   <div className="px-5 py-3 -left-9 top-[274px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="w-60 justify-start text-Text---Header text-sm font-medium font-['Lato'] leading-5">
+                    <div className="w-60 justify-start text-Text---Header text-sm font-medium  leading-5">
                       Incubate and Accelerate Clean Energy Enterprises and Tech Innovators
                     </div>
                   </div>
                   <div className="px-5 py-3 left-[263px] top-[73px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="w-60 justify-start text-Text---Header text-sm font-medium font-['Lato'] leading-5">
+                    <div className="w-60 justify-start text-Text---Header text-sm font-medium  leading-5">
                       Assessing and Discovering problems in the livelihood
                     </div>
                   </div>
                   <div className="w-80 px-5 py-3 left-[228px] top-[457px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="flex-1 justify-start text-Text---Header text-sm font-medium font-['Lato'] leading-5">
+                    <div className="flex-1 justify-start text-Text---Header text-sm font-medium  leading-5">
                       Leverage resources and expertise of financial institutions to provide
                       accessible financing solutions
                     </div>
@@ -357,10 +368,22 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[45%] h-[461px] px-2.5 py-11 bg-black/20 rounded-[20px]" />
+            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
+              <Image
+                src={incubation}
+                alt="incubation image"
+                className="rounded-[20px] object-cover h-full"
+              />
+            </div>
           </div>
           <div className="px-9 py-12 rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="w-[45%] h-[461px] px-2.5 py-11 bg-black/20 rounded-[20px]" />
+            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
+              <Image
+                src={incubation}
+                alt="incubation image"
+                className="rounded-[20px] object-cover h-full"
+              />
+            </div>
             <div className="flex-1  inline-flex flex-col justify-start items-start gap-3">
               <div className=" flex flex-col justify-start items-start">
                 <div className=" flex flex-col justify-start items-start gap-4">
@@ -633,13 +656,19 @@ const page = () => {
             </div>
           </div>
           <div className="px-9 py-12 h-[460px] rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="w-[45%] h-full px-2.5 py-11 bg-black/20 rounded-[20px]" />
+            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
+              <Image
+                src={incubation}
+                alt="incubation image"
+                className="rounded-[20px] object-cover h-full"
+              />
+            </div>
             <div className="flex-1 inline-flex pt-2 self-stretch flex-col justify-start items-start gap-3">
               <div className=" flex flex-col justify-start items-start">
                 <div className=" flex flex-col h-full justify-start items-start gap-4">
                   <div className="flex justify-center items-center gap-3">
                     <div className="w-16 h-16 flex items-center justify-center relative bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
-                      <FaCoins className="text-white w-6 h-6" />
+                      <PiBooks className="text-white w-6 h-6" />
                     </div>
                     <div className="flex-1 justify-start text-black text-3xl font-bold leading-10">
                       Cross Learning & Dissimination
@@ -671,7 +700,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-6 md:px-10 lg:px-16">
+      <div className="container mx-auto px-6 md:px-10 lg:px-16 mb-12">
         <div className="bg-amber-400 rounded-3xl p-8 md:p-10 lg:p-12 grid gap-10 lg:grid-cols-[1fr_1.1fr] items-center shadow-lg">
           <div className="space-y-6 text-slate-900">
             <div className="text-sm font-semibold tracking-[0.15em]">BUILD TOGETHER</div>
@@ -707,6 +736,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
