@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImage from "@/public/about-us.jpg";
@@ -10,6 +12,7 @@ import Bisrat from "@/public/team/Bisrat.png";
 import Henok from "@/public/team/Henok.png";
 import Nuhamin from "@/public/team/nuhamin.png";
 import Misgana from "@/public/team/Misgana.png";
+import Yoseph from "@/public/team/joseph.jpg";
 
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import LogoCarousel from "@/components/logocarousel";
@@ -307,7 +310,7 @@ const Page = () => {
                       Nuhamin Abate
                     </div>
                     <div className="opacity-60 justify-start text-gray-800 text-xs font-medium  leading-5">
-                      Analyst
+                      Project Officer
                     </div>
                   </div>
                   <div className="flex gap-5">
@@ -331,7 +334,31 @@ const Page = () => {
                       Misgana Belete
                     </div>
                     <div className="opacity-60 justify-start text-gray-800 text-xs font-medium  leading-5">
-                      Analyst
+                      Project Officer
+                    </div>
+                  </div>
+                  <div className="flex gap-5">
+                    <FaFacebook className="w-7 h-7 text-gray-800" />
+                    <FaTwitter className="w-7 h-7 text-gray-800" />
+                    <FaLinkedinIn className="w-7 h-7 text-gray-800" />
+                  </div>
+                </div>
+              </div>
+              <div className="inline-flex flex-col justify-start items-center gap-3">
+                <Image
+                  className=" w-32 h-32 md:w-60 md:h-60 rounded-full"
+                  src={Yoseph}
+                  alt="Yoseph Asfaw"
+                  width={240}
+                  height={240}
+                />
+                <div className="flex flex-col justify-start items-center gap-3">
+                  <div className="w-40 flex flex-col justify-center items-center">
+                    <div className="text-center justify-start text-gray-800 text-xl font-medium  leading-8">
+                      Yoseph Asfaw
+                    </div>
+                    <div className="opacity-60 justify-start text-gray-800 text-xs font-medium  leading-5">
+                      Project Officer
                     </div>
                   </div>
                   <div className="flex gap-5">
@@ -347,12 +374,12 @@ const Page = () => {
                 our Supporters
               </div>
               {/* md and above: show carousel */}
-              <div className="hidden md:block">
+              <div className="hidden md:flex">
                 <LogoCarousel />
               </div>
 
               {/* small screens: show static logos */}
-              <div className="md:hidden  flex justify-center items-center p-4 ">
+              <div className="md:hidden  flex justify-center items-center p-4 overflow-hidden ">
                 <div className="flex flex-wrap gap-10">
                   {[...Array(6)].map((_, idx) => (
                     <div key={idx}>

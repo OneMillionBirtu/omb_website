@@ -45,8 +45,8 @@ export default function LivelihoodCard({
 
       <div className="flex-1 inline-flex flex-col justify-center md:justify-start items-start gap-3">
         {/* TITLE + ICON + DESCRIPTION */}
-        <div className="flex flex-col gap-4 border">
-          <div className="flex items-center gap-2 border">
+        <div className="flex flex-col gap-4 ">
+          <div className="flex items-center gap-2 ">
             <div className=" w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
               {icon}
             </div>
