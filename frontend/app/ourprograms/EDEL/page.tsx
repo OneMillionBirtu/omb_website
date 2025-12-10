@@ -12,12 +12,13 @@ import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import LivelihoodCard from "@/components/EDELCard";
 import { LivelihoodSections } from "@/data/Edelcontent";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
       <Navbar />
-      <section className="border w-full md:px-20 py-8 md:py-16 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+      <section className="border w-full lg:px-20 py-8 lg:py-16 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
         <div className="self-stretch h-fit md:h-[522px] p-3 rounded-3xl inline-flex flex-col md:flex-row justify-between items-center overflow-hidden">
           <div className="md:w-[480px] self-stretch px-2 md:px-7 py-8 rounded-2xl inline-flex flex-col justify-start items-start gap-6 overflow-hidden">
             <div className="self-stretch flex flex-col justify-start items-start gap-8">
@@ -46,10 +47,12 @@ const page = () => {
                   Livelihood & <br className="hidden md:block" />
                   Finance
                 </div>
-                <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-sm font-medium ">View More</div>
-                  <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
-                </div>
+                <Link href="#livelihood">
+                  <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
+                    <div className="justify-start text-sm font-medium ">View More</div>
+                    <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
+                  </div>
+                </Link>
               </div>
               <div
                 className="self-stretch flex-1 px-4 py-8 md:px-4 md:py-6 md:h-auto  bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
@@ -60,13 +63,15 @@ const page = () => {
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
                   Knowledge{" "}
                 </div>
-                <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-sm font-medium ">View More</div>
-                  <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
-                </div>
+                <Link href="#knowledge">
+                  <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
+                    <div className="justify-start text-sm font-medium ">View More</div>
+                    <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
+                  </div>
+                </Link>
               </div>
             </div>
-            <div className="flex-1 w-full h-fit md:h-[480px] flex justify-start items-start gap-4 md:gap-3 overflow-hidden ">
+            <div className="flex-1 w-full  order-1 md:order-2 h-fit md:h-[480px] flex justify-start items-start gap-4 md:gap-3 overflow-hidden ">
               <div
                 className="flex-1 self-stretch px-4 py-8 bg-black/50 rounded-2xl inline-flex flex-col justify-end items-start gap-6 md:gap-4 overflow-hidden"
                 style={{
@@ -76,10 +81,12 @@ const page = () => {
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
                   Incubation
                 </div>
-                <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-sm font-medium">View More</div>
-                  <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
-                </div>
+                <Link href="#incubation">
+                  <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
+                    <div className="justify-start text-sm font-medium ">View More</div>
+                    <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -136,23 +143,23 @@ const page = () => {
         </svg>
         {/* the what do we do */}
         <div
-          className="self-stretch px-8 py-24  bg-zinc-900/80 inline-flex flex-col justify-center items-end gap-36"
+          className="self-stretch px-8 py-6 md:py-24  bg-zinc-900/80 inline-flex flex-col justify-center items-end gap-36"
           style={{
             background: `linear-gradient(0deg, rgba(14, 34, 25, 0.80) 0%, rgba(14, 34, 25, 0.80) 100%), url(${Homeback.src}) lightgray -140px -240px / 202.078% 151.165% no-repeat`,
           }}
         >
-          <div className="self-stretch flex flex-col justify-center items-center gap-2">
+          <div className="self-stretch flex flex-col justify-center items-center md:gap-2">
             <div className=" w-full flex flex-col justify-center items-end gap-2.5">
-              <div className="px-2.5  flex justify-center items-center gap-4">
-                <div className="  justify-start text-amber-400 text-3xl font-bold uppercase tracking-widest">
+              <div className="px-2.5 flex justify-center items-center gap-4">
+                <div className="  justify-start text-amber-400 text-2xl md:text-3xl font-bold uppercase tracking-widest text-right">
                   WHAT DO WE DO in EDEL
                 </div>
                 <div className="w-12 outline-2  outline-amber-400" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-20">
-              <div className="w-full px-8 inline-flex flex-col md:flex-row justify-start items-center">
-                <div className="w-[622px] h-[538px] relative">
+              <div className="w-full md:px-8 inline-flex flex-col md:flex-row justify-start items-center">
+                <div className="hidden lg:block md:w-[622px] md:h-[538px] relative">
                   <Image
                     className="w-80 h-50 left-0 -top-px absolute bg-blend-overlay rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.10)]"
                     src={interview}
@@ -193,7 +200,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 inline-flex flex-col justify-start items-start gap-8  mt-6">
+                <div className="flex-1 inline-flex flex-col justify-start items-start md:gap-8 mt-6">
                   <div className="self-stretch justify-start text-white text-base font-normal leading-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                     in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
@@ -227,468 +234,11 @@ const page = () => {
         </div>
       </section>
       {/* Key Components */}
-      <section className="w-full px-20 py-16 bg-white flex flex-col justify-start items-center gap-16">
-        <div className="justify-start text-gray-800 text-3xl font-bold uppercase ">
+      <section className="w-full py-8 px-4 md:px-20 md:py-16 bg-white flex flex-col justify-start items-center gap-8 md:gap-16">
+        <div className="justify-start text-gray-800 text-2xl md:text-3xl font-bold uppercase ">
           KEY COMPONENTS
         </div>
         {/* components */}
-        {/* <div className="flex flex-col gap-12">
-          <div className="px-9 py-12 rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="flex-1  inline-flex flex-col justify-start items-start gap-3">
-              <div className=" flex flex-col justify-start items-start">
-                <div className=" flex flex-col justify-start items-start gap-4">
-                  <div className="flex justify-center items-center gap-3">
-                    <div className="w-16 h-16 flex items-center justify-center relative bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
-                      <Image src={stonks} alt="icon" className="text-white" />
-                    </div>
-                    <div className="flex-1 justify-start text-black text-3xl font-bold leading-10">
-                      Livelihood Innovation
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col justify-start items-center gap-2.5">
-                    <div className="self-stretch opacity-60 justify-start text-black text-base font-normal leading-6">
-                      Transform livelihoods by deploying 56 decentralized renewable energy (DRE)
-                      technologies across 10 applications in 56 pilot sites, with 10% user
-                      co-financing to drive ownership and sustainability.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-                  <div className="self-stretch justify-start text-black text-base font-normal leading-6">
-                    [An Info graphics showing how it is done]
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="inline-flex flex-col justify-center items-center gap-2.5">
-                  <div className="w-60 opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    [Title]
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-2.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="inline-flex flex-col justify-center items-center gap-2.5">
-                  <div className="w-60 opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    [Title]
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-2.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
-              <Image
-                src={incubation}
-                alt="incubation image"
-                className="rounded-[20px] object-cover h-full"
-              />
-            </div>
-          </div>
-          <div className="px-9 py-12 rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
-              <Image
-                src={incubation}
-                alt="incubation image"
-                className="rounded-[20px] object-cover h-full"
-              />
-            </div>
-            <div className="flex-1  inline-flex flex-col justify-start items-start gap-3">
-              <div className=" flex flex-col justify-start items-start">
-                <div className=" flex flex-col justify-start items-start gap-4">
-                  <div className="flex justify-center items-center gap-3">
-                    <div className="w-16 h-16 flex items-center justify-center relative bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
-                      <FaCoins className="text-white w-6 h-6" />
-                    </div>
-                    <div className="flex-1 justify-start text-black text-3xl font-bold leading-10">
-                      Financing Livelihoods
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col justify-start items-center gap-2.5">
-                    <div className="self-stretch opacity-60 justify-start text-black text-base font-normal leading-6">
-                      Enabling DRE-powered livelihood solutions to become affordable and accessible
-                      through inclusive financing and creating a scalable, replicable model.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-                  <div className="self-stretch justify-start text-black text-base font-normal leading-6">
-                    [An Info graphics showing how it is done]
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="inline-flex flex-col justify-center items-center gap-2.5">
-                  <div className="w-60 opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    [Title]
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-2.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="inline-flex flex-col justify-center items-center gap-2.5">
-                  <div className="w-60 opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    [Title]
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-2.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-48 h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        [lorem ipsum]
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="px-9 py-12 rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="flex-1  inline-flex flex-col justify-start items-start gap-3">
-              <div className=" flex flex-col justify-start items-start">
-                <div className=" flex flex-col justify-start items-start gap-4">
-                  <div className="flex justify-center items-center gap-3">
-                    <div className="w-16 h-16 flex items-center justify-center relative bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
-                      <Lamp className="text-white w-6 h-6" />
-                    </div>
-                    <div className="flex-1 justify-start text-black text-3xl font-bold leading-10">
-                      Incubation
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col justify-start items-center gap-2.5">
-                    <div className="self-stretch opacity-60 justify-start text-black text-base font-normal leading-6">
-                      Transform livelihoods by deploying 56 decentralized renewable energy (DRE)
-                      technologies across 10 applications in 56 pilot sites, with 10% user
-                      co-financing to drive ownership and sustainability.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-                  <Image src={incu_graphics} alt="incubation graphics" className="w-108" />
-                </div>
-              </div>
-              <div className=" w-full flex justify-between items-center">
-                <div className="flex flex-col justify-center items-start gap-2">
-                  <div className="w-fill  opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    Technology Innovators
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-0.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base   leading-6">
-                        Seed funding for product development
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Technical training and expert mentorship
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Business development services and consulting
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Comprehensive M&E tools and support
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Collaborative co-working space access
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Prototype development and scaling support
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-2">
-                  <div className="w-fit opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    Clean Energy Enterprises (CEEs)
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-0.5">
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Seed funding for operational expenses
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Technical training and deployment mentorship
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Business development services and consulting
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Comprehensive M&E tools and support
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Collaborative co-working space access
-                      </div>
-                    </div>
-                    <div className="inline-flex justify-start items-center gap-3">
-                      <div className="w-4 h-4 relative">
-                        <FaRegCircleCheck />
-                      </div>
-                      <div className="w-fit h-6 justify-center text-neutral-500 text-base font-normal  leading-6">
-                        Guided market validation and strategy
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
-              <Image
-                src={incubation}
-                alt="incubation image"
-                className="rounded-[20px] object-cover h-full"
-              />
-            </div>
-          </div>
-          <div className="px-9 py-12 h-[460px] rounded-[20px] shadow-[0px_8px_24px_0px_rgba(0,82,41,0.80)] outline  -outline-offset-1 outline-neutral-200 inline-flex justify-start items-center gap-12">
-            <div className="w-[36%]   h-108  rounded-[20px] flex items-center justify-center">
-              <Image
-                src={incubation}
-                alt="incubation image"
-                className="rounded-[20px] object-cover h-full"
-              />
-            </div>
-            <div className="flex-1 inline-flex pt-2 self-stretch flex-col justify-start items-start gap-3">
-              <div className=" flex flex-col justify-start items-start">
-                <div className=" flex flex-col h-full justify-start items-start gap-4">
-                  <div className="flex justify-center items-center gap-3">
-                    <div className="w-16 h-16 flex items-center justify-center relative bg-linear-to-br from-emerald-900 to-emerald-800 rounded-full">
-                      <PiBooks className="text-white w-6 h-6" />
-                    </div>
-                    <div className="flex-1 justify-start text-black text-3xl font-bold leading-10">
-                      Cross Learning & Dissimination
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col justify-start items-center gap-2.5">
-                    <div className="self-stretch opacity-60 justify-start text-black text-base font-normal leading-6">
-                      Enabling DRE-powered livelihood solutions to become affordable and accessible
-                      through inclusive financing and creating a scalable, replicable model.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
-                  <div className="self-stretch justify-start text-black text-base font-normal leading-6">
-                    [An Info graphics showing how it is done]
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch inline-flex justify-between items-center">
-                <div className="inline-flex flex-col justify-center items-center gap-2.5">
-                  <div className="w-60 opacity-80 justify-start text-black text-lg font-medium leading-7">
-                    [Title]
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         {LivelihoodSections.map((section, index) => (
           <LivelihoodCard key={index} {...section} />
         ))}

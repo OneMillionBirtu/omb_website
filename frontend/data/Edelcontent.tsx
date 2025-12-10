@@ -34,6 +34,7 @@ export const LivelihoodSections: LivelihoodSection[] = [
         items: ["lorem ipsum", "lorem ipsum", "lorem ipsum", "lorem ipsum", "lorem ipsum"],
       },
     ],
+    id: "livelihood",
   },
 
   {
@@ -54,6 +55,7 @@ export const LivelihoodSections: LivelihoodSection[] = [
         items: ["lorem ipsum", "lorem ipsum", "lorem ipsum", "lorem ipsum", "lorem ipsum"],
       },
     ],
+    id: "financing",
   },
   {
     title: "Incubation",
@@ -87,9 +89,10 @@ export const LivelihoodSections: LivelihoodSection[] = [
         ],
       },
     ],
+    id: "incubation",
   },
   {
-    title: "Cross Learning & Knowledge Dissemination",
+    title: "Learning & Knowledge Dissemination",
     description:
       "Transform livelihoods by deploying 56 decentralized renewable energy (DRE) technologies across pilot sites.",
     icon: <PiBooks className="text-white w-6 h-6" />,
@@ -120,5 +123,6 @@ export const LivelihoodSections: LivelihoodSection[] = [
         ],
       },
     ],
+    id: "knowledge",
   },
 ] as const;
