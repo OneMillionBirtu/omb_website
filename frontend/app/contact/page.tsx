@@ -68,7 +68,7 @@ const Contact = () => {
             "linear-gradient(180deg, rgba(0, 80, 46, 0.90) 35.58%, rgba(0, 0, 0, 0.72) 100%), url('/wateringMan.png') lightgray 50% / cover no-repeat",
         }}
       >
-        <div className="container mx-auto px-26 py-20">
+        <div className="container mx-auto px-6 lg:px-26 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-2 items-start">
             {/* Left copy */}
             <div className="flex  flex-col text-white max-w-xl lg:p-4 lg:pr-8">
@@ -91,7 +91,7 @@ const Contact = () => {
       </header>
 
       <section className="bg-white">
-        <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
+        <div className="flex flex-col container mx-auto px-6 lg:px-16 py-16 gap-6">
           <div className="flex items-center justify-start mb-12 gap-2">
             <div className="w-12 h-0.75 bg-emerald-900 rounded-2xl" />
             <h3 className="text-4xl font-semibold text-emerald-900 mr-4">
