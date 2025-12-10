@@ -42,7 +42,7 @@ const donate = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex flex-col gap-6 lg:gap-8 lg:items-end">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight text-emerald-900 flex flex-col items-center lg:items-end">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight text-emerald-900 flex flex-col text-center lg:text-left lg:items-end">
               Donate to our &nbsp;
               <br className="sm:hidden lg:block" />
               Mission
@@ -70,7 +70,7 @@ const donate = () => {
       </section>
 
       <section className="bg-white lg:pt-18">
-        <div className="flex flex-col container mx-auto px-16 py-16 gap-6">
+        <div className="flex flex-col container mx-auto px-6 lg:px-16 py-16 gap-6">
           <div className="flex items-center justify-end mb-12 gap-2">
             <div className="w-12 h-0.75 bg-emerald-900 rounded-2xl" />
             <h3 className="text-4xl font-semibold text-emerald-900 mr-4">WHY DONATE?</h3>

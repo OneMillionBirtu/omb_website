@@ -6,7 +6,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-[#013D23] text-white">
-      <div className="container mx-auto px-16 py-12">
+      <div className="container mx-auto px-6 lg:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="w-32 h-16 relative">
