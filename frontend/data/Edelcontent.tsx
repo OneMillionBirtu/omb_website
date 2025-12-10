@@ -7,6 +7,8 @@ import stonks from "@/public/Icons/stonks.svg";
 import incubation from "@/public/KaleWork.jpg";
 import incu_graphics from "@/public/Icons/incu_graphics.png";
 import { LivelihoodCardProps } from "@/components/EDELCard";
+import knowldege from "@/public/hero-image.jpg";
+import { PiBooks } from "react-icons/pi";
 
 export type LivelihoodSection = Omit<LivelihoodCardProps, "graphics" | "icon"> & {
   icon: React.ReactNode;
@@ -53,7 +55,6 @@ export const LivelihoodSections: LivelihoodSection[] = [
       },
     ],
   },
-
   {
     title: "Incubation",
     description:
@@ -83,6 +84,39 @@ export const LivelihoodSections: LivelihoodSection[] = [
           "M&E support",
           "Co-working space access",
           "Guided market validation",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Cross Learning & Knowledge Dissemination",
+    description:
+      "Transform livelihoods by deploying 56 decentralized renewable energy (DRE) technologies across pilot sites.",
+    icon: <PiBooks className="text-white w-6 h-6" />,
+    image: incubation.src,
+    layout: "left",
+    graphics: <div>[An Info graphics showing how it is done]</div>,
+    lists: [
+      {
+        title: "Lorem ipsum dolor sit amet",
+        items: [
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+        ],
+      },
+      {
+        title: "Lorem ipsum dolor sit amet",
+        items: [
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
+          "Lorem ipsum dolor sit amet",
         ],
       },
     ],
