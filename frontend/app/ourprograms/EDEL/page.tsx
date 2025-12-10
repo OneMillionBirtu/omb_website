@@ -17,14 +17,14 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className="border w-full pl-20 pr-16 py-16 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-        <div className="self-stretch h-[522px] p-3 rounded-3xl inline-flex justify-between items-center overflow-hidden">
-          <div className="w-[480px] self-stretch px-7 py-8 rounded-2xl inline-flex flex-col justify-start items-start gap-6 overflow-hidden">
+      <section className="border w-full md:px-20 py-8 md:py-16 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+        <div className="self-stretch h-fit md:h-[522px] p-3 rounded-3xl inline-flex flex-col md:flex-row justify-between items-center overflow-hidden">
+          <div className="md:w-[480px] self-stretch px-2 md:px-7 py-8 rounded-2xl inline-flex flex-col justify-start items-start gap-6 overflow-hidden">
             <div className="self-stretch flex flex-col justify-start items-start gap-8">
-              <div className="self-stretch justify-start text-black text-6xl font-black  leading-[76.80px]">
+              <div className="self-stretch justify-start text-black w-10 md:w-full text-5xl md:text-6xl font-black leading-10 md:leading-[76.80px]">
                 EDEL - Program
               </div>
-              <div className="self-stretch justify-start text-black text-2xl font-bold  leading-7">
+              <div className="self-stretch justify-start text-black text-xl md:text-2xl font-bold  leading-7">
                 Enabling DRE Ecosystem For Livelihoods in Ethiopia
               </div>
               <div className="self-stretch h-28 justify-start text-black text-base font-normal  leading-6">
@@ -34,27 +34,25 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="w-[616.87px] flex justify-start items-center gap-3">
-            <div className="flex-1 h-[480px] inline-flex flex-col justify-start items-start gap-3 overflow-hidden">
+          <div className="w-full md:w-[640px] flex flex-col md:flex-row justify-start items-center gap-3">
+            <div className="flex-1 order-2 md:order-1 w-full h-fit md:h-[480px] inline-flex flex-col justify-start items-start gap-3 overflow-hidden">
               <div
-                className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
+                className="self-stretch flex-1 px-4 py-8 md:px-4 md:py-6 md:h-auto bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
                 style={{
                   background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
                 }}
               >
                 <div className="self-stretch justify-start text-white text-xl font-bold ">
-                  Livelihood &<br />
+                  Livelihood & <br className="hidden md:block" />
                   Finance
                 </div>
                 <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-Text---Header text-sm font-normal ">
-                    View More
-                  </div>
+                  <div className="justify-start text-sm font-medium ">View More</div>
                   <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
                 </div>
               </div>
               <div
-                className="self-stretch flex-1 px-4 py-6 bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
+                className="self-stretch flex-1 px-4 py-8 md:px-4 md:py-6 md:h-auto  bg-black/50 rounded-2xl flex flex-col justify-end items-start gap-4 overflow-hidden"
                 style={{
                   background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
                 }}
@@ -63,16 +61,14 @@ const page = () => {
                   Knowledge{" "}
                 </div>
                 <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-Text---Header text-sm font-normal ">
-                    View More
-                  </div>
+                  <div className="justify-start text-sm font-medium ">View More</div>
                   <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
                 </div>
               </div>
             </div>
-            <div className="flex-1 h-[480px] flex justify-start items-start gap-3 overflow-hidden ">
+            <div className="flex-1 w-full h-fit md:h-[480px] flex justify-start items-start gap-4 md:gap-3 overflow-hidden ">
               <div
-                className="flex-1 self-stretch px-4 py-6 bg-black/50 rounded-2xl inline-flex flex-col justify-end items-start gap-4 overflow-hidden"
+                className="flex-1 self-stretch px-4 py-8 bg-black/50 rounded-2xl inline-flex flex-col justify-end items-start gap-6 md:gap-4 overflow-hidden"
                 style={{
                   background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${incubation.src}) lightgray 10% / cover no-repeat`,
                 }}
@@ -81,9 +77,7 @@ const page = () => {
                   Incubation
                 </div>
                 <div className="h-9 px-4 py-1 bg-amber-400 rounded-[38.55px] inline-flex justify-center items-center gap-2 overflow-hidden">
-                  <div className="justify-start text-Text---Header text-sm font-normal ">
-                    View More
-                  </div>
+                  <div className="justify-start text-sm font-medium">View More</div>
                   <div className="w-4 h-4 left-[5.96px] top-[5.96px] absolute bg-black" />
                 </div>
               </div>
@@ -157,7 +151,7 @@ const page = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center gap-20">
-              <div className="w-full px-8 inline-flex justify-start items-center">
+              <div className="w-full px-8 inline-flex flex-col md:flex-row justify-start items-center">
                 <div className="w-[622px] h-[538px] relative">
                   <Image
                     className="w-80 h-50 left-0 -top-px absolute bg-blend-overlay rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.10)]"
@@ -183,17 +177,17 @@ const page = () => {
                   <div className="w-80 h-50 left-0 top-[329px] absolute bg-black/30 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.10)]" />
 
                   <div className="px-5 py-3 -left-9 top-[274px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="w-60 justify-start text-Text---Header text-sm font-medium  leading-5">
+                    <div className="w-60 justify-start text-sm font-medium  leading-5">
                       Incubate and Accelerate Clean Energy Enterprises and Tech Innovators
                     </div>
                   </div>
                   <div className="px-5 py-3 left-[263px] top-[73px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="w-60 justify-start text-Text---Header text-sm font-medium  leading-5">
+                    <div className="w-60 justify-start text-sm font-medium  leading-5">
                       Assessing and Discovering problems in the livelihood
                     </div>
                   </div>
                   <div className="w-80 px-5 py-3 left-[228px] top-[457px] absolute bg-white/60 rounded-2xl shadow-[0px_4px_12px_0px_rgba(0,0,0,0.50)] inline-flex justify-center items-center gap-2">
-                    <div className="flex-1 justify-start text-Text---Header text-sm font-medium  leading-5">
+                    <div className="flex-1 justify-start text-sm font-medium  leading-5">
                       Leverage resources and expertise of financial institutions to provide
                       accessible financing solutions
                     </div>
