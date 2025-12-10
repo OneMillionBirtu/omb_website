@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import React from "react";
 import Homeback2 from "@/public/homeback2-sky.jpg";
 import Homeback from "@/public/homeback2.jpg";
 import Image from "next/image";
@@ -7,7 +6,7 @@ import knowldege from "@/public/hero-image.jpg";
 import interview from "@/public/Livelihood_interview.jpg";
 import incubation from "@/public/KaleWork.jpg";
 
-import { ArrowRight, Lamp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import LivelihoodCard from "@/components/EDELCard";
