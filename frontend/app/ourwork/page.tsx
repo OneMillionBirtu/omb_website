@@ -40,7 +40,7 @@ export default function Page() {
             </div>
             {/* lg:h-64 lg:w-74 h-48 */}
             {/* Right cards - overlapping */}
-            <div className="flex flex-wrap gap-4 py-8">
+            <div className="flex border flex-wrap gap-4 h-144">
               <div className="flex gap-4 w-full">
                 <div
                   key="livelihood"
@@ -83,7 +83,7 @@ export default function Page() {
               </div>
               <div
                 key="education"
-                className="rounded-xl overflow-hidden shadow-lg relative lg:h-64 lg:w-152 h-48 w-full"
+                className="rounded-xl border-amber-300 border  overflow-hidden shadow-lg relative lg:h-64 lg:w-full w-full"
                 style={{
                   background:
                     "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/solar.jpg') center / cover no-repeat",
