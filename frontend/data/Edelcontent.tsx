@@ -7,7 +7,6 @@ import stonks from "@/public/Icons/stonks.svg";
 import incubation from "@/public/KaleWork.jpg";
 import incu_graphics from "@/public/Icons/incu_graphics.png";
 import { LivelihoodCardProps } from "@/components/EDELCard";
-import knowldege from "@/public/hero-image.jpg";
 import { PiBooks } from "react-icons/pi";
 
 export type LivelihoodSection = Omit<LivelihoodCardProps, "graphics" | "icon"> & {

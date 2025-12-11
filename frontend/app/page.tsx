@@ -7,8 +7,7 @@ import { Calendar, ExternalLink } from "lucide-react";
 import Head from "next/head";
 import Homeback2 from "@/public/homeback2-sky.jpg";
 import OurSupporters from "@/components/ourSupporters";
-import RotatingCards from "@/components/rotatingCard";
-import ImpactCards from "@/components/rotatingCard";
+
 import AreasOfWork from "@/components/AreasofWork";
 
 export const metadata = {

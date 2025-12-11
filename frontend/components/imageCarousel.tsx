@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -14,18 +14,18 @@ type ImageCarouselProps = {
 export default function ImageCarousel({ images, interval = 4000 }: ImageCarouselProps) {
   const [index, setIndex] = useState(0);
 
-  const next = () => {
+  const next = useCallback(() => {
     setIndex((prev) => (prev + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     setIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
   useEffect(() => {
     const timer = setInterval(next, interval);
     return () => clearInterval(timer);
-  }, [index, interval, next]);
+  }, [interval, next]);
 
   return (
     <div className="relative w-full h-96 md:h-108 lg:h-144 flex justify-center overflow-hidden rounded-2xl shadow-lg bg-slate-100">
