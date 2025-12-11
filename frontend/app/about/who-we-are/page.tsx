@@ -154,7 +154,7 @@ const page = () => {
         >
           <a
             title="about"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUIcmlja3JvbGygBwE%3D"
+            href="https://www.youtube.com/channel/UCWapb2UQEpslmN_Ho2ANWJw"
             target="_blank"
             rel="noopener noreferrer"
             className="

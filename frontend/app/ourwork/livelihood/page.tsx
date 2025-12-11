@@ -5,8 +5,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import ImageCarousel from "@/components/imageCarousel";
 
 const LivelihoodPage = () => {
+  const Images = ["/cox.jpg", "/livelihood.png", "/solar.jpg"];
+
   return (
     <div className="bg-white text-slate-900">
       <Navbar />
@@ -22,29 +26,7 @@ const LivelihoodPage = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div
-              className="relative w-full flex justify-center overflow-hidden rounded-2xl shadow-lg bg-slate-100"
-              // style={{ aspectRatio: "3 /3" }}
-            >
-              <Image
-                width={700}
-                height={700}
-                src="/cox.jpg"
-                alt="Livelihood hero"
-                // fill
-                className="object-fit"
-                priority
-              />
-
-              <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-4 md:px-6">
-                <div className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber-400 text-emerald-900 shadow-md">
-                  <ArrowLeft className="h-5 w-5" />
-                </div>
-                <div className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber-400 text-emerald-900 shadow-md">
-                  <ArrowRight className="h-5 w-5" />
-                </div>
-              </div>
-            </div>
+            <ImageCarousel images={Images} />
 
             <div className="flex flex-col gap-6 lg:gap-8">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-emerald-900">
@@ -72,17 +54,17 @@ const LivelihoodPage = () => {
           </div>
           <div className="border-b border-slate-200" />
 
-          <Tabs defaultValue="agriculture" className="mt-6">
-            <TabsList className="flex w-full max-w-xl bg-transparent p-0 gap-2">
+          <Tabs defaultValue="agriculture" className="mt-6 w-full ">
+            <TabsList className="flex w-full bg-transparent p-0 gap-2">
               <TabsTrigger
                 value="agriculture"
-                className="flex-1 rounded-full border border-slate-200 px-4 py-3 text-lg font-semibold data-[state=active]:border-emerald-700 data-[state=active]:text-emerald-800 data-[state=active]:shadow-sm"
+                className="flex-1 rounded-full border border-slate-200 px-4 py-4 text-xl font-semibold data-[state=active]:border-emerald-700 data-[state=active]:text-emerald-800 data-[state=active]:shadow-sm"
               >
                 Agriculture
               </TabsTrigger>
               <TabsTrigger
                 value="msmes"
-                className="flex-1 rounded-full border border-slate-200 px-4 py-3 text-lg font-semibold data-[state=active]:border-emerald-700 data-[state=active]:text-emerald-800 data-[state=active]:shadow-sm"
+                className="flex-1 rounded-full border border-slate-200 px-4 py-4 text-xl font-semibold data-[state=active]:border-emerald-700 data-[state=active]:text-emerald-800 data-[state=active]:shadow-sm"
               >
                 MSMEs
               </TabsTrigger>
@@ -93,7 +75,7 @@ const LivelihoodPage = () => {
                 <div className="space-y-6 text-lg leading-relaxed text-slate-700">
                   <div>
                     <h3 className="text-3xl font-semibold text-emerald-800">Agriculture</h3>
-                    <div className="mt-1 h-[3px] w-28 bg-emerald-800" />
+                    <div className="mt-2 h-[3px] w-[15%] bg-emerald-800" />
                   </div>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
@@ -140,7 +122,7 @@ const LivelihoodPage = () => {
                 <div className="order-1 lg:order-2 space-y-6 text-lg leading-relaxed text-slate-700">
                   <div>
                     <h3 className="text-3xl font-semibold text-emerald-800">MSMEs</h3>
-                    <div className="mt-1 h-[3px] w-20 bg-emerald-800" />
+                    <div className="mt-2 h-[3px] w-[15%] bg-emerald-800" />
                   </div>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
@@ -156,6 +138,14 @@ const LivelihoodPage = () => {
                     Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
                     libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
+                  <p>
+                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <p>
+                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                    libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
                 </div>
               </div>
             </TabsContent>
@@ -165,14 +155,16 @@ const LivelihoodPage = () => {
         {/* Explore banner + support card */}
         <section className="space-y-8">
           <div className="bg-[#0b5a32] text-white py-14 px-6 md:px-10 lg:px-16 text-center">
-            <div className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+            <div className="text-2xl md:text-3xl lg:text-3xl font-semibold leading-tight">
               Explore Our Program Working
               <br />
               Livelihood
             </div>
-            <Button className="mt-6 bg-amber-400 text-emerald-900 hover:bg-amber-500 px-6 py-3 text-lg font-semibold">
-              EDEL - Program
-            </Button>
+            <Link href="/ourprograms/EDEL">
+              <Button className="mt-6 bg-amber-400 text-emerald-900 hover:bg-emerald-900 hover:text-amber-400 hover:border-amber-400 cursor-pointer hover:border px-6 py-3 text-lg font-semibold">
+                EDEL - Program
+              </Button>
+            </Link>
           </div>
 
           <div className="container mx-auto px-6 md:px-10 lg:px-16">

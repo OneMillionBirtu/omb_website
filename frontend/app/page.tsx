@@ -5,6 +5,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, ExternalLink } from "lucide-react";
 import Head from "next/head";
+import Homeback2 from "@/public/homeback2-sky.jpg";
+import OurSupporters from "@/components/ourSupporters";
+
+import AreasOfWork from "@/components/AreasofWork";
 
 export const metadata = {
   title: "One Million Birtu | Empowering Communities in Ethiopia",
@@ -54,9 +58,9 @@ export default function Home() {
             <div className="relative container mx-auto px-4 flex h-full items-center">
               <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left text-primary-foreground animate-fade-in lg:pl-14">
                 <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Empowering Livelihoods Through Climate-Smart Technologies
+                  Empowering the Under served through Climate Smart Technologies
                 </h1>
-                <h2 className="hidden sm:block text-lg sm:text-xl md:text-3xl mb-6 text-primary-foreground/90 leading-relaxed">
+                <h2 className="hidden sm:block text-base md:text-2xl mb-6 text-primary-foreground/90 leading-relaxed">
                   Building sustainable markets and resilient communities across Ethiopia
                 </h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -90,10 +94,10 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* left column - copy-friendly, responsive */}
                 <div className="max-w-xl mx-auto lg:mx-0">
-                  <div className="mt-8 flex items-center gap-2 pb-8">
-                    <div className="hidden lg:block w-5 h-12 border-l-2 border-emerald-900"></div>
-                    <div className="text-emerald-900 text-md lg:text-base font-bold uppercase tracking-widest">
-                      Know About us
+                  <div className="mt-8 flex items-center gap-4 pb-8">
+                    <div className="w-8 md:w-16 h-0 origin-top-left outline-2 -outline-offset-1 outline-gray-800"></div>
+                    <div className="text-emerald-900 text-md lg:text-3xl font-bold uppercase tracking-widest">
+                      About us
                     </div>
                   </div>
                   <h3 className="text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6">
@@ -116,104 +120,74 @@ export default function Home() {
                 </div>
 
                 {/* right column - responsive cards area. On small screens cards stack; on lg screens they overlap using absolute positioning */}
-                <div className="w-full">
-                  <div className="relative w-full lg:h-[420px]">
-                    {/* Main large card - centered on lg */}
-                    <div
-                      style={{
-                        background:
-                          "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/livelihood.png') center / cover no-repeat",
-                      }}
-                      className="relative lg:absolute lg:left-6 lg:top-20 w-full sm:w-80 lg:w-80 h-56 bg-emerald-900/30 rounded-[28px] shadow-lg p-5 flex flex-col justify-between overflow-hidden mb-6 lg:mb-0"
-                    >
-                      <div className="h-8 px-3.5 py-1 bg-amber-400 rounded-full inline-flex justify-center items-center gap-2 overflow-hidden w-max">
-                        <div className="text-xs font-normal">View More</div>
-                        <div className="w-5 h-4 relative rotate-45">
-                          <div className="w-3.5 h-3.5 bg-black absolute left-[5.68px] top-[5.68px]"></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-white text-xl font-bold">Empowering the</div>
-                        <div className="text-white text-3xl lg:text-5xl font-bold">Livelihood</div>
-                      </div>
-                    </div>
-
-                    {/* Top right small card */}
-                    <div
-                      style={{
-                        background:
-                          "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/Education.png') center / cover no-repeat",
-                      }}
-                      className="relative lg:absolute lg:right-0 lg:top-0 w-full sm:w-72 h-48 bg-amber-400/10 rounded-[28px] p-4 inline-flex justify-start items-start gap-2 overflow-hidden mb-4 lg:mb-0"
-                    >
-                      <div className="flex-1 self-stretch inline-flex flex-col justify-between items-end">
-                        <div className="h-7 px-3 py-1 bg-amber-400 rounded-full inline-flex justify-center items-center gap-1.5 w-max">
-                          <div className="text-xs">View More</div>
-                        </div>
-                        <div className="self-stretch text-white">
-                          <div className="text-base font-bold">Powering the</div>
-                          <div className="text-3xl font-bold">Education</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Bottom right small card */}
-                    <div
-                      style={{
-                        background:
-                          "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/solar.jpg') center / cover no-repeat",
-                      }}
-                      className="relative lg:absolute lg:right-6 lg:bottom-0 w-full sm:w-72 h-48 bg-amber-400/10 rounded-[28px] p-4 inline-flex justify-start items-start gap-2 overflow-hidden"
-                    >
-                      <div className="flex-1 self-stretch inline-flex flex-col justify-between items-end">
-                        <div className="h-7 px-3 py-1 bg-amber-400 rounded-full inline-flex justify-center items-center gap-1.5 w-max">
-                          <div className="text-xs">View More</div>
-                        </div>
-                        <div className="self-stretch text-white">
-                          <div className="text-base font-bold">Electrifying the</div>
-                          <div className="text-3xl font-bold">Health</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {/* <RotatingCards /> */}
+                {/* <ImpactCards /> */ <AreasOfWork />}
               </div>
             </div>
           </section>
 
           {/* second decorative squiggle */}
-          <section className="bg-white pb-0 ">
-            <div className="relative h-40 md:h-56 lg:h-72 overflow-hidden">
-              <Image
-                src="/squiggle2.png"
-                alt="decorative squiggle"
-                fill
-                className="object-contain object-top"
-                priority
-              />
-            </div>
-          </section>
 
           {/* testimonial / our why's section with gradient over background image */}
-          <section className="relative">
-            {/* base background layer (slightly zoomed) */}
-            <div
-              className="absolute inset-0 -z-20"
-              style={{
-                background:
-                  "linear-gradient(0deg, rgba(14, 34, 25, 0.80) 0%, rgba(14, 34, 25, 0.80) 100%), url('/homeback2.jpg') lightgray -874.599px -419.073px / 202.078% 135.678% no-repeat",
-              }}
-            />
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 1440 320"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <defs>
+              {/* IMAGE */}
+              <pattern id="bgImage" patternUnits="objectBoundingBox" width="1" height="1">
+                <image
+                  href={Homeback2.src}
+                  width="1440"
+                  height="490"
+                  x=""
+                  y=""
+                  style={{ objectFit: "cover" }}
+                  preserveAspectRatio="xMidYMin slice"
+                />
+              </pattern>
 
-            {/*  */}
+              {/* GRADIENT */}
+              <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="rgba(14, 34, 25, 0.8)" />
+                <stop offset="100%" stopColor="rgba(14, 34, 25, 0.8)" />
+              </linearGradient>
 
-            <div className="relative container mx-auto px-18 py-20">
+              {/* CLIP SHAPE */}
+              <clipPath id="waveShape">
+                <path
+                  d="M 0,500 L 0,187 C 178.1333 203.4 356.2666 219.8 520,197 
+                  C 683.7333 174.2 833.0666 112.2 984,104 
+                  C 1134.9333 95.8 1287.4666 141.4 1440,187 
+                  L 1440,500 L 0,500 Z"
+                />
+              </clipPath>
+            </defs>
+
+            <g transform="translate(1440 0) scale(-1 1)" clipPath="url(#waveShape)">
+              {/* background image */}
+              <rect width="1440" height="500" fill="url(#bgImage)" />
+
+              {/* overlay gradient */}
+              <rect width="1440" height="500" fill="url(#overlay)" />
+            </g>
+          </svg>
+          <section
+            className=""
+            style={{
+              background:
+                "linear-gradient(0deg, rgba(14, 34, 25, 0.80), rgba(14, 34, 25, 0.80)), url('/homeback2.jpg') center / cover no-repeat",
+            }}
+          >
+            <div className="container mx-auto px-18 py-20">
               <div className="flex justify-end">
                 <div className="text-amber-400 font-bold tracking-widest text-3xl">OUR WHYs</div>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8">
-                {/* image */}
                 <div className="flex justify-center lg:justify-start">
                   <div className="w-64 sm:w-72 md:w-80 lg:w-96 rounded-xl overflow-hidden bg-white/0 shadow-lg">
                     <Image
@@ -227,7 +201,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* quote/text */}
                 <div className="text-white">
                   <blockquote className="text-lg md:text-xl leading-relaxed">
                     “I was terrified giving birth in the dark. I worried for myself and my baby. The
@@ -246,12 +219,10 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Our Targets - shares the same visual background (lower area uses zoomed layer above) */}
               <div className="mt-20 text-center">
                 <h4 className="text-3xl md:text-4xl text-amber-400 font-bold mb-8">OUR TARGETS</h4>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                  {/* when content is found, duplicate 4x and replace text */}
                   {Array.from({ length: 4 }).map((_, i) => (
                     <div
                       key={i}
@@ -259,15 +230,13 @@ export default function Home() {
                     >
                       <div className="flex items-center justify-center mb-4">
                         <div className="w-16 h-16 rounded-full bg-emerald-700/50 flex items-center justify-center">
-                          {/* placeholder icon */}
                           <div className="w-8 h-8 bg-amber-400 rounded-full" />
                         </div>
                       </div>
                       <div className="text-2xl font-bold mb-2 text-amber-400">4597+</div>
                       <div className="font-semibold mb-2">Improved women esteem</div>
                       <p className="text-sm text-white/80">
-                        contrary to popular belief, Lorem Ipsum is not simply random text. contrary
-                        to popular belief, Lorem Ipsum is not simply random text.
+                        contrary to popular belief, Lorem Ipsum is not simply random text.
                       </p>
                     </div>
                   ))}
@@ -386,21 +355,9 @@ export default function Home() {
           </section>
 
           {/* Supporters row */}
-          <section className="bg-white">
-            <div className="container mx-auto px-16 py-18">
-              <h4 className="text-emerald-900 text-2xl mb-6">OUR SUPPORTERS</h4>
-              <div className="flex items-center justify-between gap-4 flex-wrap">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-24 h-10 bg-gray-100 rounded flex items-center justify-center text-gray-400"
-                  >
-                    logoipsum
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+          <div className="py-20">
+            <OurSupporters />
+          </div>
 
           <Footer />
         </div>
