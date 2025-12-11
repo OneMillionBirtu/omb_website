@@ -316,7 +316,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>  
+      </section>
       {/*  future target*/}
       <section
         style={{
