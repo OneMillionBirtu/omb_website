@@ -13,6 +13,8 @@ import Nuhamin from "@/public/team/nuhamin.png";
 import Misgana from "@/public/team/Misgana.png";
 import Yoseph from "@/public/team/joseph.jpg";
 
+import InfoGraphics from "@/public/info-graphics.png";
+
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import OurSupporters from "@/components/ourSupporters";
 
@@ -154,8 +156,8 @@ const Page = () => {
                   </div>
                 </div>
                 <div className="w-full flex justify-center items-center gap-2.5">
-                  <div className="flex-1 h-10 justify-start text-gray-800 text-3xl font-bold  leading-10">
-                    [An Info Graphics Here]
+                  <div>
+                    <Image src={InfoGraphics} alt="our approach" />
                   </div>
                 </div>
               </div>

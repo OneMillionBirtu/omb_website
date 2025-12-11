@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Students from "@/public/Education.png";
 import DairyFarmer from "@/public/dairyFarmer.jpg";
+import InfoGraphics from "@/public/info-graphics.png";
 
 const page = () => {
   const targets = [
@@ -279,8 +280,8 @@ const page = () => {
               </div>
             </div>
             <div className="w-full flex justify-center items-center gap-2.5">
-              <div className="flex-1 h-10 justify-start text-gray-800 text-3xl font-bold  leading-10">
-                [An Info Graphics Here]
+              <div>
+                <Image src={InfoGraphics} alt="our approach" />
               </div>
             </div>
           </div>
@@ -317,6 +318,7 @@ const page = () => {
           </div>
         </div>
       </section>
+
       {/*  future target*/}
       <section
         style={{

@@ -23,7 +23,7 @@ const sections: Section[] = [
   {
     key: "health",
     title: "Health",
-    image: "/solar.jpg",
+    image: "/Health2.jpg",
     description:
       "We solar-electrify rural health clinics, provide energy-efficient medical equipment, and support digitalization. This ensures reliable power for lighting, vaccine refrigeration, and medical devices, directly improving maternal and child healthcare outcomes and saving lives in underserved communities. ",
     link: "/ourwork/health",
@@ -31,7 +31,7 @@ const sections: Section[] = [
   {
     key: "education",
     title: "Education",
-    image: "/solar.jpg",
+    image: "/Education2.png",
     description:
       "We work to power rural schools with clean energy, enabling digital learning tools, lighting for evening classes, and a better learning environment. This supports educational outcomes and community development after hours..",
     link: "/ourwork/education",
