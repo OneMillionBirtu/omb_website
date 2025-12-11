@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aboutImage from "@/public/about-us.jpg";
 import Image from "next/image";
-import Logoipsum from "@/public/Logos/Logoipsum.svg";
 
 import Yohannes from "@/public/team/yohannes.png";
 import Rahwa from "@/public/team/rahwa.png";
@@ -15,7 +14,7 @@ import Misgana from "@/public/team/Misgana.png";
 import Yoseph from "@/public/team/joseph.jpg";
 
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import LogoCarousel from "@/components/logocarousel";
+import OurSupporters from "@/components/ourSupporters";
 
 const Page = () => {
   return (
@@ -369,26 +368,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <div className="px-6 md:px-16 w-full flex flex-col justify-start items-start gap-12">
-              <div className="justify-start text-gray-800 text-xl md:text-2xl font-bold uppercase tracking-widest">
-                our Supporters
-              </div>
-              {/* md and above: show carousel */}
-              <div className="hidden md:flex">
-                <LogoCarousel />
-              </div>
-
-              {/* small screens: show static logos */}
-              <div className="md:hidden  flex justify-center items-center p-4 overflow-hidden ">
-                <div className="flex flex-wrap gap-10">
-                  {[...Array(6)].map((_, idx) => (
-                    <div key={idx}>
-                      <Image src={Logoipsum} alt="Logoipsum" className="w-20 h-auto" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <OurSupporters />
           </section>
         </main>
         <Footer />
