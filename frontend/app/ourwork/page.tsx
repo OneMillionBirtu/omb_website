@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import AreasOfWork from "@/components/AreasofWork";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -29,14 +30,12 @@ export default function Page() {
                   Areas of Work
                 </div>
               </div>
-              <h1 className="lg:text-6xl text-4xl md:text-5xl font-bold mb-6">
-                [A catchy Tagline Here]
+              <h1 className="lg:text-6xl text-4xl md:text-5xl font-bold mb-6 leading-18">
+                Powering Productive Potential
               </h1>
-              <p className=" mb-6 text-amber-400">
-                We help our partners move from vision to execution by combining strategic insight
-                with hands-on delivery. Our work spans program implementation, investment
-                facilitation, and institutional capacity development, bridging the gap between ideas
-                and impact.
+              <p className=" mb-6 text-xl text-amber-400">
+                We integrate clean energy across agriculture, health, and education to create
+                resilient livelihoods, better services, and vibrant local economies.
               </p>
             </div>
 
@@ -60,23 +59,27 @@ export default function Page() {
                 Enabling DRE Ecosystem for Livelihoods in Ethiopia (EDEL)
               </h4>
               <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Porro vero at quae eaque delectus eius excepturi, provident voluptates, alias
-                repudiandae possimus labore iure soluta velit natus quia fuga? Repudiandae, modi.
+                EDEL is our flagship program to build a robust, self-sustaining Decentralized
+                Renewable Energy (DRE) ecosystem focused on livelihoods. In partnership with the
+                IKEA Foundation and implemented by PRECISE, we take a three-stage approach:
+                Innovate, Scale-up, and Amplify.
               </p>
               <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum trisident voluptates, aliaspossimus labore iure soluta velit natus
-                quia fuga? Repudiandae, modi.
+                We co-design and pilot DRE solutions (like solar irrigation and agro-processing)
+                with grassroots partners, validating them across 56 sites. We then scale by
+                incubating 8-10 clean energy enterprises and partnering with financial institutions
+                to create inclusive financing models for over 100 users.
               </p>
               <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Porro vero at quae eaque delectus eius excepturi, provident voluptates, alias
-                repudiandae possimus labore iure soluta velit natus quia fuga? Repudiandae, modi.
+                Finally, we amplify impact by fostering cross-learning, creating knowledge products,
+                and facilitating South-South summits to share replicable models. The goal is to
+                transform agriculture and MSME sectors, creating lasting economic impact while
+                building local ownership for a sustainable ecosystem.
               </p>
-              <button className="px-4 py-2 bg-amber-400 text-black rounded ">Learn more</button>
+              <Link href="/ourprograms/EDEL">
+                {" "}
+                <button className="px-4 py-2 bg-amber-400 text-black rounded ">Learn more</button>
+              </Link>
             </div>
             <div
               className="rounded-xl  order-1 lg:order-2 overflow-hidden h-64 lg:h-128 "
@@ -103,8 +106,8 @@ export default function Page() {
               Our Programs
             </div>
             <p className="text-lg leading-relaxed text-slate-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-              eros elementum tristique.
+              Your partnership fuels innovation, scales solutions, and empowers communities to build
+              a resilient, energy-secure future.
             </p>
 
             <div className="flex flex-wrap gap-4">

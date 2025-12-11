@@ -9,6 +9,7 @@ import Homeback2 from "@/public/homeback2-sky.jpg";
 import OurSupporters from "@/components/ourSupporters";
 
 import AreasOfWork from "@/components/AreasofWork";
+import Link from "next/link";
 
 export const metadata = {
   title: "One Million Birtu | Empowering Communities in Ethiopia",
@@ -101,16 +102,13 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6">
-                    We bring light to the livelihood
+                    We serve the underserved.
                   </h3>
                   <p className="text-zinc-600 text-base leading-7 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique.
-                    <br />
-                    <br />
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-                    libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    One Million Birtu (OMB) tackles Ethiopia&apos;s energy gap to empower farms,
+                    businesses, and social infrastructure. We co-design and scale clean energy
+                    solutions that drive productivity, resilience, and opportunity in rural and
+                    peri-urban communities, aiming to impact one million lives by 2030.
                   </p>
                   <div>
                     <button className="px-6 py-3 bg-amber-400 text-black rounded-md font-medium">
@@ -273,14 +271,16 @@ export default function Home() {
                           Enabling DRE Ecosystem For Livelihoods in Ethiopia (EDEL)
                         </h4>
                         <p className="text-white/90 text-sm">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                          varius enim in eros.
+                          A comprehensive program building a robust clean energy ecosystem to
+                          co-design, pilot, and scale DRE solutions for agriculture and MSMEs.
                         </p>
                       </div>
                       <div className="mt-4">
-                        <button className="px-4 py-2 bg-amber-400 text-black rounded">
-                          Learn more
-                        </button>
+                        <Link href="ourprograms/EDEL">
+                          <button className="px-4 py-2 bg-amber-400 text-black rounded">
+                            Learn more
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

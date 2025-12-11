@@ -30,15 +30,11 @@ const LivelihoodPage = () => {
 
             <div className="flex flex-col gap-6 lg:gap-8">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-emerald-900">
-                [ A catchy
-                <br />
-                Tagline Here]
+                Energizing Farms <br />& Enterprises
               </h1>
-              <p className="text-lg leading-relaxed text-slate-700 max-w-xl">
-                We help our partners move from vision to execution by combining strategic insight
-                with hands-on delivery. Our work spans program implementation, investment
-                facilitation, and institutional capacity development, bridging the gap between ideas
-                and impact.
+              <p className="text-xl leading-relaxed text-slate-700 max-w-xl">
+                We transform agriculture and small business through clean energy solutions that
+                increase productivity, resilience, and income for underserved communities.
               </p>
             </div>
           </div>
@@ -78,27 +74,35 @@ const LivelihoodPage = () => {
                     <div className="mt-2 h-[3px] w-[15%] bg-emerald-800" />
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut commodo
-                    diam libero vitae erat.
+                    Agriculture is the backbone of Ethiopia&apos;s economy, yet over 95% of
+                    smallholders rely on rain-fed farming, leaving them vulnerable. We bridge this
+                    gap by integrating Decentralized Renewable Energy (DRE) to power climate-smart
+                    solutions across the value chain. Our work begins by identifying critical energy
+                    gaps with farmers and cooperatives. We then co-design and pilot tailored
+                    technologies such as solar water pumps for reliable irrigation, moving farmers
+                    beyond unpredictable rainfall.
                   </p>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut commodo
-                    diam libero vitae erat.
+                    We deploy solar-powered cold storage units to drastically reduce post-harvest
+                    losses, allowing farmers to store produce and sell at better prices. For
+                    livestock and dairy farmers, we introduce solutions like solar milking machines
+                    and solar-powered butter churners to enhance hygiene and efficiency. Beyond
+                    piloting, we ensure these solutions are scalable and sustainable. We conduct
+                    value chain analysis and develop viable business models for each technology. We
+                    partner with financial institutions to create affordable loan products, making
+                    these technologies accessible. Simultaneously, we incubate and support local
+                    Clean Energy Enterprises (CEEs) that can manufacture, customize, install, and
+                    maintain these solutions, building local supply and expertise. Through our EDEL
+                    program, we aim to deploy dozens of these DRE technologies, transforming
+                    agricultural productivity from a challenge of scarcity to one of abundance,
+                    increasing incomes, and building resilience against climate change for
+                    smallholder farmers.
                   </p>
                   <p>
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
-                    viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
-                    viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat.
+                    Through our EDEL program, we aim to deploy dozens of these DRE technologies,
+                    transforming agricultural productivity from a challenge of scarcity to one of
+                    abundance, increasing incomes, and building resilience against climate change
+                    for smallholder farmers.
                   </p>
                 </div>
 
@@ -125,26 +129,34 @@ const LivelihoodPage = () => {
                     <div className="mt-2 h-[3px] w-[15%] bg-emerald-800" />
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat.
+                    Micro, Small, and Medium Enterprises (MSMEs) are engines of job creation and
+                    local economic growth, yet they are constrained by unreliable energy and limited
+                    access to finance. Many rely on costly, polluting diesel generators or simply
+                    close when the sun sets.
                   </p>
                   <p>
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
-                    viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                    Suspendisse varius enim in eros elementum tristique.
+                    Our mission is to unlock the productive potential of these enterprises with
+                    clean, reliable power. We work with entrepreneurs in sectors like services and
+                    manufacturing, providing solar-powered toolkits tailored to their needs. This
+                    includes solar barber kits for hairdressers, solar sewing machines for tailors,
+                    and solar refrigerators for shop owners and cafes, enabling them to operate
+                    longer hours, reduce costs, and improve their services.
                   </p>
                   <p>
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-                    libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Our approach is holistic. We don&apos;t just supply technology; we build the
+                    ecosystem for it to thrive. We collaborate with grassroots organizations to
+                    identify motivated entrepreneurs and understand their specific challenges. We
+                    then facilitate connections to financing through partnerships with banks and
+                    microfinance institutions, developing loan products with manageable terms. To
+                    ensure supply and maintenance, we incubate and accelerate local solar
+                    enterprises, building their capacity to serve the MSME market effectively.
                   </p>
                   <p>
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-                    libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <p>
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-                    libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Furthermore, we capture and share learnings, creating benchmarking documents and
+                    case studies (like our study on solar-powered barbershops) to guide replication.
+                    By addressing energy access, finance, and local capacity together, we empower
+                    MSMEs to grow, create sustainable jobs—especially for women and youth—and become
+                    pillars of vibrant, resilient local economies..
                   </p>
                 </div>
               </div>
@@ -177,8 +189,8 @@ const LivelihoodPage = () => {
                   Our Programs
                 </div>
                 <p className="text-lg leading-relaxed text-slate-800">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                  in eros elementum tristique.
+                  Your partnership fuels innovation, scales solutions, and empowers communities to
+                  build a resilient, energy-secure future.
                 </p>
 
                 <div className="flex flex-wrap gap-4">

@@ -200,31 +200,31 @@ const page = () => {
                   </div>
                 </div>
                 <div className="flex-1 inline-flex flex-col justify-start items-start md:gap-8 mt-6">
-                  <div className="self-stretch justify-start text-white text-base font-normal leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut commodo
-                    diam libero vitae erat.
+                  <div className="self-stretch justify-start text-white text-lg font-normal leading-8">
+                    The Enabling DRE Ecosystem for Livelihoods in Ethiopia (EDEL) program is our
+                    comprehensive initiative to build a self-sustaining market for clean energy
+                    solutions that transform livelihoods. Funded by the IKEA Foundation and
+                    implemented with PRECISE, EDEL tackles systemic barriers from innovation to
+                    scale.
                     <br />
                     <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut commodo
-                    diam libero vitae erat.
+                    We start by co-designing and piloting decentralized renewable energy (DRE)
+                    technologies—like solar pumps, cold storage, and processing tools—directly with
+                    farmers and small business owners through grassroots partners. We validate these
+                    across 56 pilot sites (small, medium, and large scale) to prove their
+                    feasibility and impact. Simultaneously, we incubate and accelerate local Clean
+                    Energy Enterprises and tech innovators, providing them with mentorship, capacity
+                    building, and piloting support to refine and deliver context-appropriate
+                    solutions.
                     <br />
-                    <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut commodo
-                    diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
-                    viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                    <br />
-                    <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
-                    eros dolor interdum nulla, ut commodo diam libero vitae erat. interdum nulla, ut
-                    commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
+                    <br />A core pillar is facilitating inclusive finance. We partner with financial
+                    institutions to design and deploy tailored loan products, making these
+                    technologies affordable for end-users. Finally, we capture and disseminate
+                    knowledge through case studies, toolkits, and events like the South-South
+                    Summit, ensuring learnings are shared to replicate success. EDEL’s ultimate goal
+                    is to create a thriving ecosystem where technology providers, financiers, and
+                    users interact seamlessly, driving sustainable economic growth long after our
+                    direct involvement.
                   </div>
                 </div>
               </div>
