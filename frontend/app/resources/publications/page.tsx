@@ -16,7 +16,7 @@ export default function Page() {
             "linear-gradient(180deg, rgba(0, 80, 46, 0.90) 35.58%, rgba(0, 0, 0, 0.72) 100%), url('/wateringMan.png') lightgray 50% / cover no-repeat",
         }}
       >
-        <div className="container mx-auto px-16 py-20">
+        <div className="container mx-auto px-6 lg:px-16 py-20">
           <div className="flex flex-col gap-4 w-full text-white">
             {/* Left copy */}
             <div className="flex justify-end w-full">
@@ -36,8 +36,8 @@ export default function Page() {
 
       {/* Programs section - alternating layout */}
       <section className="bg-white">
-        <div className="flex flex-wrap container mx-auto px-16 py-16 gap-6">
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+        <div className="flex flex-wrap container mx-auto px-6 lg:px-16 py-16 gap-6 justify-center">
+          <Card className="p-6 lg:w-xs sm:w-full h-fit shadow-lg border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -56,7 +56,7 @@ export default function Page() {
               Download
             </button>
           </Card>
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+          <Card className="p-6 lg:w-xs sm:w-full border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -75,7 +75,7 @@ export default function Page() {
               Download
             </button>
           </Card>
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+          <Card className="p-6 lg:w-xs sm:w-full shadow-lg border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -94,7 +94,7 @@ export default function Page() {
               Download
             </button>
           </Card>
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+          <Card className="p-6 lg:w-xs sm:w-full shadow-lg border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -113,7 +113,7 @@ export default function Page() {
               Download
             </button>
           </Card>
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+          <Card className="p-6 lg:w-xs sm:w-full shadow-lg border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -132,7 +132,7 @@ export default function Page() {
               Download
             </button>
           </Card>
-          <Card className="p-6 w-xs h-fit shadow-lg border-l-4 border-l-green-900  ">
+          <Card className="p-6 lg:w-xs sm:w-full shadow-lg border-l-4 border-l-green-900  ">
             <p className="font-bold">Climate-smart Agriculture Impact Assesment</p>
             <div className="flex items-center -mt-4">
               <Calendar className="w-4 h-4 text-gray-400 inline-block mr-1" />
@@ -155,7 +155,7 @@ export default function Page() {
       </section>
 
       {/* Electrify banner */}
-      <section className="container mx-auto px-16 py-12">
+      <section className="container mx-auto px-6 lg:px-16 py-12">
         <div
           className="rounded-xl overflow-hidden relative h-56 md:h-72"
           style={{
@@ -165,7 +165,7 @@ export default function Page() {
         >
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h2 className="text-2xl md:text-4xl font-bold mb-8">
+              <h2 className="text-2xl md:text-4xl font-bold mb-8 md:p-12 sm:p-6">
                 You can contribute to Electrify Ethiopia by 2030
               </h2>
               <button className="px-6 py-2 bg-amber-400 text-black rounded">Donate →</button>
