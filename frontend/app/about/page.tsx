@@ -104,7 +104,7 @@ const Page = () => {
             >
               <a
                 title="about"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUIcmlja3JvbGygBwE%3D"
+                href="https://www.youtube.com/channel/UCWapb2UQEpslmN_Ho2ANWJw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
@@ -130,7 +130,7 @@ const Page = () => {
               </a>
             </div>
             <div className="w-full px-8 md:px-28 pt-32 pb-32 bg-[#F7AD1A] inline-flex flex-col justify-start items-center gap-24">
-              <div className="inline-flex  flex-col md:flex-rowjustify-start items-center gap-16 md:gap-24">
+              <div className="inline-flex  flex-col md:flex-row justify-start items-center gap-16 md:gap-24">
                 <div className="w-full flex gap-4 flex-col">
                   <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
                     Our Approaches
