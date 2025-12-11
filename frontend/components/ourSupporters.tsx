@@ -10,16 +10,22 @@ const OurSupporters = () => {
         our Supporters
       </div>
       {/* md and above: show carousel */}
-      <div className="hidden md:flex w-full border justify-center">
+      <div className="hidden md:flex w-full  justify-center">
         <LogoCarousel logos={LogoArray} />
       </div>
 
       {/* small screens: show static logos */}
       <div className="md:hidden  flex justify-center items-center p-4 overflow-hidden ">
         <div className="flex flex-wrap gap-10">
-          {[...Array(6)].map((_, idx) => (
-            <div key={idx}>
-              <Image src={Logoipsum} alt="Logoipsum" className="w-20 h-auto" />
+          {LogoArray.map((logo, i) => (
+            <div key={i} className="lex justify-center items-center">
+              <Image
+                src={logo}
+                alt={`logo-${i}`}
+                width={140}
+                height={20}
+                className="object-contain"
+              />
             </div>
           ))}
         </div>

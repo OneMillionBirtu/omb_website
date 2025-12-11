@@ -59,7 +59,7 @@ export default function LogoCarousel({ logos }: LogoCarouselProps) {
   }, [instanceRef]);
 
   return (
-    <div className="border  w-full overflow-hidden">
+    <div className="  w-full overflow-hidden">
       <div ref={sliderRef} className="keen-slider flex items-center justify-center">
         {logos.map((src, i) => (
           <div key={i} className="keen-slider__slide flex justify-center items-center">
