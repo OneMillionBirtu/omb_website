@@ -198,7 +198,10 @@ const Navigation = () => {
               <Bell className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-destructive rounded-full"></span>
             </Link>
-            <Button asChild className="bg-amber-400 text-green-900">
+            <Button
+              asChild
+              className="bg-amber-400 text-green-900 hover:bg-green-900 hover:text-amber-400 cursor-pointer"
+            >
               <Link href="/donate">Donate</Link>
             </Button>
           </div>
@@ -296,7 +299,10 @@ const Navigation = () => {
               </Link> */}
 
               <div className="flex flex-col space-y-2 pt-4">
-                <Button asChild className="bg-amber-400 text-green-900">
+                <Button
+                  asChild
+                  className="bg-amber-400 text-green-900 hover:bg-green-900 hover:text-amber-400 cursor-pointer"
+                >
                   <Link href="/donate">Donate</Link>
                 </Button>
               </div>
@@ -317,16 +323,16 @@ type MobileSectionProps = {
 
 const MobileSection = ({ label, isOpen, onToggle, links }: MobileSectionProps) => (
   <div className="border border-border rounded-lg px-3 py-3 bg-card/40">
-    <button
+    <Button
       className="flex w-full items-center justify-between font-semibold text-foreground"
       onClick={onToggle}
       aria-expanded={isOpen}
     >
-      <span className="hover:text-[#013D23]">{label}</span>
+      <span className="hover:text-amber-400">{label}</span>
       <ChevronDown
         className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : "rotate-0"}`}
       />
-    </button>
+    </Button>
     {isOpen && (
       <div className="mt-3 flex flex-col space-y-2 text-sm text-muted-foreground">
         {links.map((link) => (
