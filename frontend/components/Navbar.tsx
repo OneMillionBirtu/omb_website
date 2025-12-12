@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Bell } from "lucide-react";
+import Logo from "@/public/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-40 h-20 bg-gradient-primary rounded-lg flex items-center justify-center relative overflow-hidden">
-              <Image src="/logo.png" alt="OMB Logo" fill className="object-contain pl-2" />
+              <Image src={Logo} alt="OMB Logo" fill className="object-contain pl-2" />
             </div>
             {/* <span className="font-heading font-bold text-xl text-foreground">OMB</span> */}
           </Link>

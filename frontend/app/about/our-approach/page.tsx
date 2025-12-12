@@ -9,27 +9,27 @@ const Page = () => {
     {
       title: "Innovation",
       description:
-        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+        "Co-designing and piloting DRE solutions with communities to validate feasibility and build demand for productive uses of energy.",
     },
     {
       title: "Finance",
       description:
-        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+        "Partnering with banks and MFIs to develop tailored financial products, making clean energy technologies affordable for end-users and enterprises.",
     },
     {
       title: "Policy",
       description:
-        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+        "Engaging with government stakeholders to advocate for an enabling environment that supports the growth of the DRE sector.",
     },
     {
       title: "Forward & Backward Linkage",
       description:
-        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+        "Connecting clean energy suppliers with end-user markets and ensuring access to necessary inputs and technical support.",
     },
     {
       title: "Skill & Capacity Building",
       description:
-        "We identify and address market gaps that prevent communities from accessing opportunities. By building functional markets and value chains, we create sustainable pathways out of poverty.",
+        "Collaborating with TVETs, universities, and NGOs to enhance local technical and entrepreneurial capabilities for long-term sustainability.",
     },
   ];
   return (
@@ -73,27 +73,26 @@ const Page = () => {
 
           <div className="flex-1 flex flex-col gap-8">
             <div className="text-gray-800 text-xl font-bold leading-8">
-              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+              Building self-sustaining ecosystems for lasting change.
             </div>
             <div className="text-gray-800 opacity-70 text-base leading-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis deleniti dolorum modi
-              saepe autem atque illum corrupti inventore temporibus repudiandae. Similique atque
-              nostrum eligendi doloribus odit ducimus saepe officiis fugit unde, accusantium at
-              adipisci rerum! Eligendi, dolor itaque? Odit facere deserunt ex quisquam, libero
-              voluptates officia vero culpa eum quod quo laudantium unde illum dolor error qui
-              voluptas dolore iure quae corrupti eius. Itaque, quidem quo. Nihil cum qui iure
-              laudantium, consequuntur quis modi illum ullam laboriosam cumque adipisci
-              necessitatibus, tenetur quisquam harum. Voluptas quaerat, nisi modi, adipisci quia
-              nemo iusto quibusdam doloremque fugit ea beatae labore. Ducimus, voluptatibus
-              consequuntur. Aliquid esse eum debitis excepturi dolorum sit soluta consequatur
-              accusamus iure tempora, laborum temporibus quia aspernatur repellat ullam doloremque
-              nulla aut est ipsa dolor nobis qui? Totam ut laboriosam corporis excepturi, sit in
-              distinctio doloribus. Blanditiis repudiandae, odio perferendis doloribus sapiente quis
-              vero nostrum mollitia veniam. Asperiores repellendus hic quibusdam ducimus odit rerum
-              eaque qui autem porro, voluptas accusamus maiores minima quo. Ipsa earum perspiciatis
-              libero sunt harum iure odio reprehenderit nesciunt eveniet saepe expedita, animi
-              facere. Magnam enim facere quia earum quisquam fugiat minus tempore, maiores at
-              similique expedita in veniam quos quidem ducimus ad ea voluptatem culpa deserunt.
+              At OMB, our ultimate success is creating solutions and systems that outlast our direct
+              involvement. We don&apos;t aim to be perpetual implementers; we aim to be catalysts.
+              Our approach is centered on building a robust, self-sustaining Decentralized Renewable
+              Energy (DRE) ecosystem in Ethiopia. This begins with deep collaboration. We form
+              strategic partnerships with grassroots organizations, financial institutions,
+              government bodies, and training centers to co-design programs rooted in real community
+              needs. We start with Innovation, piloting new technologies and approaches to build
+              awareness and validate what works. We then focus on Scale-up, creating linkages
+              between ecosystem players—like connecting clean energy enterprises with financing and
+              markets—to replicate successful models. Finally, we Amplify by stepping into a
+              technical advisory role, promoting knowledge exchange, and facilitating
+              ecosystem-driven expansion. The goal is for the local network of
+              stakeholders—entrepreneurs, financiers, technicians, and community leaders—to own,
+              operate, and grow the ecosystem independently. We measure our impact not just by
+              megawatts installed or technologies deployed, but by the strength of the partnerships
+              we forge and the local capacity we build, ensuring that the drive for a cleaner, more
+              prosperous Ethiopia continues long after our initial role has faded.
             </div>
           </div>
         </div>

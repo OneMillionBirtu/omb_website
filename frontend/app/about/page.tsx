@@ -13,8 +13,11 @@ import Nuhamin from "@/public/team/nuhamin.png";
 import Misgana from "@/public/team/Misgana.png";
 import Yoseph from "@/public/team/joseph.jpg";
 
+import InfoGraphics from "@/public/info-graphics.png";
+
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import OurSupporters from "@/components/ourSupporters";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -34,9 +37,14 @@ const Page = () => {
     `,
             }}
           >
-            <span className="text-4xl md:text-6xl font-bold w-2xl text-white leading-12 text-center md:text-left md:leading-18">
-              We Exist To Create <br />
-              Solutions <br /> With an Impact
+            <span className="text-4xl md:text-5xl font-bold w-3xl text-white leading-12 text-center md:text-left md:leading-18">
+              We exist to tackle
+              <br />
+              Ethiopia&apos;s
+              <br />
+              lasting problems in the
+              <br />
+              energy, education, and health sectors.
             </span>
           </section>
           <section className=" px-4 md:px-16 py-16 inline-flex flex-col justify-center items-center gap-8 md:gap-16">
@@ -49,39 +57,44 @@ const Page = () => {
             </div>
             <div className="w-full px-6 md:px-12 inline-flex flex-col md:flex-row justify-start items-start gap-12 md:gap-24">
               <div className="inline-flex flex-col justify-start items-start gap-10 md:gap-16">
-                <div className="justify-start text-gray-800 text-3xl md:text-5xl font-bold leading-10 md:leading-[57.60px]">
+                <div className="justify-start text-gray-800 text-3xl md:text-5xl font-bold leading-10 md:leading-[60px]">
                   We are a <br />
+                  Ethiopian <br />
                   non-governmental <br />
                   organization
                 </div>
-                <div className="px-7 py-3 bg-amber-400 rounded backdrop-blur-2xl inline-flex justify-center items-center gap-2.5">
-                  <div className="text-right justify-start text-black text-base font-medium ">
-                    Learn more
+                <Link href="/about/who-we-are">
+                  <div className="px-7 py-3 bg-amber-400 rounded backdrop-blur-2xl inline-flex justify-center items-center gap-2.5">
+                    <div className="text-right justify-start text-black text-base font-medium ">
+                      Learn more
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="flex-1 inline-flex flex-col justify-start items-start gap-8">
                 <div className="justify-start text-gray-800 text-xl font-bold leading-8">
-                  Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
-                  risus tristique posuere.
+                  One Million Birtu was established to address Ethiopia’s challenges in the energy,
+                  agriculture, education, and health sectors through innovative solutions and to
+                  empower the rural community through strategic interventions that address their
+                  needs.
                 </div>
                 <div className="opacity-70 justify-start text-gray-800 text-base font-normal leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                  in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                  interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim
-                  elementum tristique.
+                  Founded in 2025, One Million Birtu (OMB) is an Ethiopian not-for-profit with a
+                  bold vision: a resilient Ethiopia powered by clean, affordable, and reliable
+                  energy.
                   <br />
                   <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                  in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                  interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim
-                  elementum tristique.
+                  We believe energy access is a catalyst for development.
                   <br />
                   <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                  in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                  interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim
-                  elementum tristique.
+                  Our mission is to impact one million lives by promoting clean energy that empowers
+                  farms, businesses, and social infrastructure like clinics and schools. We work
+                  holistically—not just deploying technology but also facilitating financing,
+                  building local capacity, and fostering knowledge exchange. <br />
+                  <br />
+                  Guided by values of Impact, Inclusiveness, and Partnership, we co-create solutions
+                  with communities to ensure they are equitable, sustainable, and transformative,
+                  aligning with Ethiopia&Apos;s national goals and Sustainable Development Goal 7.
                 </div>
               </div>
             </div>
@@ -136,49 +149,49 @@ const Page = () => {
                     Our Approaches
                   </div>
                   <div className="justify-start text-gray-800 text-3xl font-bold  leading-10">
-                    We make sure to provide inclusive care for children with special needs
+                    Innovate, Scale, and Amplify for impact.
                   </div>
-                  <div className="opacity-80 justify-start text-gray-800 text-base font-normal  leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                    cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                  <div className="opacity-80 justify-start text-gray-800 text-lg  font-normal  leading-8">
+                    We identify livelihood gaps and co-design solutions (Innovate), incubate
+                    enterprises and build local supply (Scale), and foster cross-learning and
+                    knowledge sharing to influence systemic change and ensure long-term
+                    sustainability (Amplify).
                   </div>
                 </div>
                 <div className="w-full flex justify-center items-center gap-2.5">
-                  <div className="flex-1 h-10 justify-start text-gray-800 text-3xl font-bold  leading-10">
-                    [An Info Graphics Here]
+                  <div>
+                    <Image src={InfoGraphics} alt="our approach" />
                   </div>
                 </div>
               </div>
               <div className="inline-flex flex-col md:flex-row justify-start items-center gap-16 md:gap-24">
                 <div className="flex gap-4 flex-col ">
                   <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
-                    our mission
+                    Our Mission
                   </div>
                   <div className=" justify-start text-gray-800 text-3xl font-bold  leading-10">
-                    We make sure to provide inclusive care for children with special needs
+                    To drive sustainable development through clean energy.
                   </div>
-                  <div className=" opacity-70 justify-start text-gray-800 text-base font-normal  leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                    cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                  <div className=" opacity-70 justify-start text-gray-800 text-lg  font-normal  leading-8">
+                    We impact lives by promoting clean energy access that empowers farms,
+                    businesses, and social infrastructure. We turn energy access into human
+                    potential, boosting productivity, creating jobs, and improving essential
+                    services for underserved communities.
                   </div>
                 </div>
 
                 <div className="flex gap-4 flex-col">
                   <div className="justify-start text-gray-800 text-base font-bold  uppercase tracking-widest">
-                    our Vision
+                    Our Vision
                   </div>
                   <div className=" justify-start text-gray-800 text-3xl font-bold  leading-10">
-                    Provide more inclusive care to children around the world
+                    A prosperous Ethiopia powered by clean energy.
                   </div>
-                  <div className=" opacity-70 justify-start text-gray-800 text-base font-normal  leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                    interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                    cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                  <div className=" opacity-70 justify-start text-gray-800 text-lg  font-normal  leading-8">
+                    We envision a resilient Ethiopia where clean, affordable, and reliable energy is
+                    a foundation for inclusive growth. This means communities withstand challenges
+                    and thrive, with energy serving as a key driver of dignity, opportunity, and
+                    security for all.
                   </div>
                 </div>
               </div>
@@ -260,8 +273,8 @@ const Page = () => {
                     <div className="text-center justify-start text-gray-800 text-xl font-medium  leading-8">
                       Bisrat Genene
                     </div>
-                    <div className="opacity-60 justify-start text-gray-800 text-xs font-medium  leading-5">
-                      Project Coordinator
+                    <div className="opacity-60 justify-start text-center text-gray-800 text-xs font-medium  leading-5">
+                      Project Lead - Livelihood innovations & Finance
                     </div>
                   </div>
                   <div className="flex gap-5">
@@ -284,8 +297,8 @@ const Page = () => {
                     <div className="text-center justify-start text-gray-800 text-xl font-medium  leading-8">
                       Henok Tsegaye
                     </div>
-                    <div className="opacity-60 justify-start text-gray-800 text-xs font-medium  leading-5">
-                      Project Coordinator
+                    <div className="opacity-60 justify-start text-center text-gray-800 text-xs font-medium  leading-5">
+                      Project Lead - Incubation Acceleration
                     </div>
                   </div>
                   <div className="flex gap-5">

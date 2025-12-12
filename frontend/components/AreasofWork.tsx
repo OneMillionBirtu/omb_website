@@ -17,23 +17,23 @@ const sections: Section[] = [
     title: "Livelihood",
     image: "/livelihood.png",
     description:
-      "We support low-income households in accessing economic opportunities through skills development, market linkages, and sustainable income-generating models designed to enhance long-term stability and resilience.",
+      "We deploy decentralized renewable energy (DRE) technologies like solar pumps and cold storage for agriculture and power tools for MSMEs. We co-design solutions, facilitate financing, and incubate local enterprises to boost productivity, incomes, and job creation.",
     link: "/ourwork/livelihood",
   },
   {
     key: "health",
     title: "Health",
-    image: "/solar.jpg",
+    image: "/Health2.jpg",
     description:
-      "Our work in health focuses on strengthening community-based healthcare systems, improving service delivery, and empowering local institutions to advance public health outcomes at scale.",
+      "We solar-electrify rural health clinics, provide energy-efficient medical equipment, and support digitalization. This ensures reliable power for lighting, vaccine refrigeration, and medical devices, directly improving maternal and child healthcare outcomes and saving lives in underserved communities. ",
     link: "/ourwork/health",
   },
   {
     key: "education",
     title: "Education",
-    image: "/solar.jpg",
+    image: "/Education2.png",
     description:
-      "Education initiatives aim to expand access to quality learning resources, enhance teaching capacity, and equip learners with the skills needed to thrive in an evolving global landscape.",
+      "We work to power rural schools with clean energy, enabling digital learning tools, lighting for evening classes, and a better learning environment. This supports educational outcomes and community development after hours..",
     link: "/ourwork/education",
   },
 ];
