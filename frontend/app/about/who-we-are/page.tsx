@@ -46,7 +46,7 @@ const page = () => {
           </div>
         </div>
         <div className="w-full lg:px-16 inline-flex justify-between items-center h-fit">
-          <div className="w-full  inline-flex flex-col justify-start items-start gap-6 md:gap-10">
+          <div className="w-full flex flex-col justify-start items-start gap-6 md:gap-10">
             <div className=" justify-start text-gray-800 text-4xl md:text-5xl font-bold  leading-[57.60px]">
               Our Founding
             </div>
@@ -74,7 +74,7 @@ const page = () => {
                 knowledge sharing to ensure solutions are adopted sustainably for long-term impact.
               </div>
               <Image
-                className="order-1 lg:order-2 md:w-[80%] h-auto rounded-[20px]"
+                className="order-1 lg:order-2 md:max-w-164 h-auto rounded-[20px]"
                 src={DairyFarmer}
                 alt="Dairy Farmer"
               />

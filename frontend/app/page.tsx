@@ -23,6 +23,33 @@ export const metadata = {
 };
 
 export default function Home() {
+  const targets = [
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "56+",
+      title: "Pilot Sites",
+      description:
+        "Deploying decentralized renewable energy technologies for transformative livelihoods..",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "120+",
+      title: "Solutions",
+      description: "Incubating enterprises to deliver clean energy solutions nationwide.",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "5000+",
+      title: "End users reached",
+      description: "Partnering with financial institutions for inclusive, accessible financing.",
+    },
+    {
+      svg: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none"> <circle cx="60" cy="60" r="55.5" fill="#00512E" stroke="#219D80" stroke-width="9"/> </svg>`,
+      value: "1M+",
+      title: "Birtus",
+      description: "Creating direct and indirect impact through our integrated programs.",
+    },
+  ];
   return (
     <>
       <Head>
@@ -217,29 +244,51 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-20 text-center">
-                <h4 className="text-3xl md:text-4xl text-amber-400 font-bold mb-8">OUR TARGETS</h4>
+              <section
+                // style={{
+                //   background: `linear-gradient(0deg, rgba(14, 34, 25, 0.90) 0%, rgba(14, 34, 25, 0.80) 100%), url(${solar.src}) lightgray 70% / cover no-repeat`,
+                // }}
+                className="px-4 py-12 md:py-12 flex flex-col justify-center items-center gap-8 md:gap-16"
+              >
+                <div className="w-full flex flex-col justify-center items-center gap-3">
+                  <div className="text-amber-400 text-3xl md:text-5xl font-bold uppercase tracking-widest">
+                    Our Targets
+                  </div>
+                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                  {Array.from({ length: 4 }).map((_, i) => (
+                <div className="w-full flex flex-col md:flex-row md:flex-wrap  justify-center items-center gap-6">
+                  {targets.map((item, index) => (
                     <div
-                      key={i}
-                      className="bg-emerald-900/40 backdrop-blur-sm rounded-xl p-6 text-white text-left flex flex-col items-center"
+                      key={index}
+                      className="flex-1  md:px-8 md:min-w-72 lg:max-w-96 py-8 bg-emerald-900/50 rounded-3xl inline-flex  justify-start items-center gap-8"
                     >
-                      <div className="flex items-center justify-center mb-4">
-                        <div className="w-16 h-16 rounded-full bg-emerald-700/50 flex items-center justify-center">
-                          <div className="w-8 h-8 bg-amber-400 rounded-full" />
+                      {/* SVG Circle */}
+
+                      <div className="flex flex-row md:flex-col justify-start items-center gap-2 ">
+                        <div className="flex flex-col justify-center items-center  ">
+                          <div
+                            className="w-32 h-32 flex justify-center items-center"
+                            dangerouslySetInnerHTML={{ __html: item.svg }}
+                          ></div>
+                          <div className="text-amber-400 text-center text-4xl font-bold capitalize leading-9">
+                            {item.value}
+                          </div>
+                        </div>
+
+                        <div className="flex flex-col justify-center items-center gap-2">
+                          <div className="text-white text-center text-xl font-semibold leading-7">
+                            {item.title}
+                          </div>
+
+                          <div className="w-full text-center text-green-200 text-base font-normal leading-5">
+                            {item.description}
+                          </div>
                         </div>
                       </div>
-                      <div className="text-2xl font-bold mb-2 text-amber-400">4597+</div>
-                      <div className="font-semibold mb-2">Improved women esteem</div>
-                      <p className="text-sm text-white/80">
-                        contrary to popular belief, Lorem Ipsum is not simply random text.
-                      </p>
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             </div>
           </section>
 
@@ -255,8 +304,8 @@ export default function Home() {
                 Comprehensive programs driving sustainable change across Ethiopia
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
-                {Array.from({ length: 3 }).map((_, idx) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 items-center justify-center">
+                {Array.from({ length: 1 }).map((_, idx) => (
                   <div
                     key={idx}
                     className="rounded-xl overflow-hidden shadow-lg relative h-64"

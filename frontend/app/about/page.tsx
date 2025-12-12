@@ -17,6 +17,7 @@ import InfoGraphics from "@/public/info-graphics.png";
 
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import OurSupporters from "@/components/ourSupporters";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -62,11 +63,13 @@ const Page = () => {
                   non-governmental <br />
                   organization
                 </div>
-                <div className="px-7 py-3 bg-amber-400 rounded backdrop-blur-2xl inline-flex justify-center items-center gap-2.5">
-                  <div className="text-right justify-start text-black text-base font-medium ">
-                    Learn more
+                <Link href="/about/who-we-are">
+                  <div className="px-7 py-3 bg-amber-400 rounded backdrop-blur-2xl inline-flex justify-center items-center gap-2.5">
+                    <div className="text-right justify-start text-black text-base font-medium ">
+                      Learn more
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="flex-1 inline-flex flex-col justify-start items-start gap-8">
                 <div className="justify-start text-gray-800 text-xl font-bold leading-8">
